@@ -1,0 +1,58 @@
+body {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 360px) {
+  /*homepage*/
+  h1 {
+    font-family: "Merriweather", "Georgia", "Serif";
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 3.5em;
+    line-height: 60%;
+    color: #92959C;
+    margin-left: 142px;
+    margin-top: 142px;
+  }
+  h2 {
+    font-family: "Merriweather", "Georgia", "Serif";
+    font-style: normal;
+    line-height: 125%;
+    margin-left: 142px;
+    font-size: 3.5em;
+    font-weight: lighter;
+    background: linear-gradient(90deg, #6c7280 0%, #b1b4ba 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .imageprofile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 156px;
+  }
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+/*# sourceMappingURL=style.css.map */
