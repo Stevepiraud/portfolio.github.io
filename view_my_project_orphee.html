@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Steve Piraud | Portfolio</title>
+	<meta name="description" content="Steve Piraud's Portfolio | User Experience Design | User Interface Design">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+	<!--navbar-->
+
+	<header class="navbar fixed">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="current" href="view_my_work.html">Work</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="spaceDiv"></div>
+
+	<main class="viewMyProject">
+		<figure class="viewMyProject__icon-container"><img class="viewMyProject__icon orphee" src="images/orphee_icon.png" alt="Icon application orphée"/></figure>
+		<h2 class="viewMyProject__title is-hidden">Orphée</h2>
+		<p class="citation"><i>“Let your music inspiration speak for itself wherever you are”</i></p>
+		<article class="projectDescription-container">
+			
+			<section class="projectDescription">
+				<h3 class="projectDescription__title">Problem description</h3>
+				<p class="projectDescription__text">There are some mobile applications that allow the user to compose music directly on the phone or tablet. But the problem is that they are not fluent/easy to use for creative people and they can't transfer the user's composition file to the music editing software
+					on computer.</p>
+			</section>
+			
+			<img class="orpheeGeneralPresentation-image" src="images/orphee_image_presentation.png" alt="orphee image presentation">
+			
+			<section class="projectDescription">
+				<h3 class="projectDescription__title">Application main functions</h3>
+				<ol class="projectDescriptionOrderedList-container">
+					<li class="projectDescription__text">Making electronic music on a smartphone</li>
+					<li class="projectDescription__text">Exporting the composition files to music editing software (if one modification is
+						made on one device, it will automatically do it on the second one)</li>
+					<li class="projectDescription__text">Sharing the composition with another producer or on platforms</li>
+					<li class="projectDescription__text">Cloud service</li>
+				</ol>
+			</section>
+
+			<p class="linktoproject-container"><a class="linktoproject" href="images/site_mapping_orphee.pdf" target="blank">View Site Mapping</a></p>
+			
+			<section class="projectDescription">
+				<h3 class="projectDescription__title">Potential roles</h3>
+				<ul class="projectDescriptionUnorderedList-container">
+					<li class="projectDescription__text">People who wants to make music on their phone</li>
+					<li class="projectDescription__text">People who wants to express their creativity wherever they are</li>
+					<li class="projectDescription__text">People who wants to work on their music in a more efficient way</li>
+					<li class="projectDescription__text">People who wants to share their work</li>
+				</ul>
+			</section>
+			
+			<section class="projectDescription">
+				<h3 class="projectDescription__title">Targeted user</h3>
+				<p class="projectDescription__text">The user is a professional music producer who is making music for a living. He is a tech-addict, always looking for some application to improve his way of life. He is also someone dedicated to his work, someone really passionate and straight-forward. He is therefore looking for a functional music application that permits him to be the
+					most efficient possible when he is working on his productions.</p>
+			</section>
+			
+			<p class="linktoproject-container"><a class="linktoproject" href="images/persona_orphee.pdf" target="blank">View Persona</a></p>
+
+			<!--lo-fi mock-ups-->
+			<section class="projectDescription">
+				<h3 class="projectDescription__title">Low-fidelity mock-ups</h3>
+
+				<div class="linkArrow-container">
+					<img id="linkArrow1__lofi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock1__lofi__orphee()"><p class="linkMockUp">Sign-up process</p></button>
+				</div>
+				<img id="signUpPath__lofi" class="mockUps__images-lofi_orphee" src="images/Sign_up_path.png" alt="sign up lo-fi mock-ups orphee">
+
+				<div class="linkArrow-container">
+					<img id="linkArrow2__lofi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock2__lofi__orphee()"><p class="linkMockUp">Music editing</p></button>
+				</div>
+				<img id="musicEditing__lofi" class="mockUps__images-lofi_orphee" src="images/music_editing.png" alt="music editing lo-fi mock-ups orphee">
+
+				<div class="linkArrow-container">
+					<img id="linkArrow3__lofi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock3__lofi__orphee()"><p class="linkMockUp">Exportation</p></button>
+				</div>
+				<img id="exportation__lofi" class="mockUps__images-lofi_orphee" src="images/export.png" alt="exportation lo-fi mock-ups orphee">
+
+				<div class="linkArrow-container">
+					<img id="linkArrow4__lofi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock4__lofi__orphee()"><p class="linkMockUp">Share</p></button>
+				</div>
+				<img id="share__lofi" class="mockUps__images-lofi_orphee" src="images/share.png" alt="share lo-fi mock-ups orphee">
+
+				<div class="linkArrow-container">
+					<img id="linkArrow5__lofi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock5__lofi__orphee()"><p class="linkMockUp">Cloud</p></button>
+				</div>
+				<img id="cloud__lofi" class="mockUps__images-lofi_orphee" src="images/cloud.png" alt="cloud lo-fi mock-ups orphee">
+			</section>
+
+			<!--hi-fi mock-ups-->
+			<section class="projectDescription">
+				<h3 class="projectDescription__title">High-fidelity mock-ups</h3>
+
+				<div class="linkArrow-container">
+					<img id="linkArrow1__hifi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock1__hifi__orphee()"><p class="linkMockUp">Sign-up process</p></button>
+				</div>
+				<img id="signUpPath__hifi" class="mockUps__images-hifi__orphee" src="images/signIn_hifi.png" alt="sign up hi-fi mock-ups orphee">		
+
+				<div class="linkArrow-container">
+					<img id="linkArrow2__hifi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock2__hifi__orphee()"><p class="linkMockUp">Music editing</p></button>
+				</div>
+				<img id="musicEditing__hifi" class="mockUps__images-hifi__orphee" src="images/music_editing_hifi.png" alt="music editing hi-fi mock-ups orphee">
+
+				<div class="linkArrow-container">
+					<img id="linkArrow3__hifi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock3__hifi__orphee()"><p class="linkMockUp">Exportation</p></button>
+				</div>
+				<img id="exportation__hifi" class="mockUps__images-hifi__orphee" src="images/export_hifi.png" alt="exportation hi-fi mock-ups orphee">
+
+				<div class="linkArrow-container">
+					<img id="linkArrow4__hifi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock4__hifi__orphee()"><p class="linkMockUp">Share</p></button>
+				</div>
+				<img id="share__hifi" class="mockUps__images-hifi__orphee" src="images/share_hifi.png" alt="share hi-fi mock-ups orphee">
+
+				<div class="linkArrow-container">
+					<img id="linkArrow5__hifi" class="linkArrow__closed" src="images/thin_arrow_right.png" alt="right arrow">
+					<button class="Button__MockUps" onclick="displayBlock5__hifi__orphee()"><p class="linkMockUp">Cloud</p></button>
+				</div>
+				<img id="cloud__hifi" class="mockUps__images-hifi__orphee" src="images/cloud_hifi.png" alt="cloud hi-fi mock-ups orphee">
+			</section>
+
+		</article>
+
+		<section class="socialNetworks-container">
+			<a href="https://www.linkedin.com/in/steve-piraud/" target="blank"><img src="images/linkedin.png" class="socialNetworks_logo" alt="profesional social network linkedin"></a>
+			<a href="https://dribbble.com/stevepiraud" target="blank"><img src="images/dribbble.png" class="socialNetworks_logo" alt="designer social network dribbble"></a>
+		</section>
+
+	</main>
+
+	<footer>
+		<p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Steve Piraud</p>
+	</footer>
+
+    <script src ="js/portfolio.js"></script>
+</body>
+
+</html>
