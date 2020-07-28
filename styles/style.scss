@@ -18,8 +18,6 @@
 }
 
 @mixin buttonStyle {
-    display: block;
-
     font-family: "Lato", "Verdana", "San serif";
     font-style: normal;
     font-weight: normal;
@@ -29,6 +27,7 @@
     -webkit-text-fill-color: transparent;
     border-radius: 4px;
     border: 2px solid #36CAF9;
+    text-align: center;
 }
 
 /*GENERAL RULES*/
@@ -329,9 +328,11 @@ button {
 
         .carousel__button__main {
             @include buttonStyle();
+            display: block;
             font-size: 1rem;
             margin: 1rem auto 0 auto;
             padding: 0.5rem 1rem;
+            width: 25%;
         }
 
         .carousel__indicator {
@@ -1010,11 +1011,8 @@ button {
         @include buttonStyle();
         font-size: 1rem;
         margin: 1rem auto 0 auto;
-        padding: 0.5rem 0rem;
+        padding: 0.5rem 1.5rem;
         transition: font-size 0.3s;
-        a {
-            padding: 0.5rem 1.5rem;
-        }
         &:hover {
             font-size: 1.1rem;
         }

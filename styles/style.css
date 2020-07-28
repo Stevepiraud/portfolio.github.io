@@ -284,7 +284,6 @@ button:hover {
     padding: 1rem;
   }
   .carousel__button__main {
-    display: block;
     font-family: "Lato", "Verdana", "San serif";
     font-style: normal;
     font-weight: normal;
@@ -294,9 +293,12 @@ button:hover {
     -webkit-text-fill-color: transparent;
     border-radius: 4px;
     border: 2px solid #36CAF9;
+    text-align: center;
+    display: block;
     font-size: 1rem;
     margin: 1rem auto 0 auto;
     padding: 0.5rem 1rem;
+    width: 25%;
   }
   .carousel__indicator {
     border: 0.6px solid #36CAF9;
@@ -905,7 +907,6 @@ button:hover {
     padding: 1rem;
   }
   .carousel__button__main {
-    display: block;
     font-family: "Lato", "Verdana", "San serif";
     font-style: normal;
     font-weight: normal;
@@ -915,14 +916,12 @@ button:hover {
     -webkit-text-fill-color: transparent;
     border-radius: 4px;
     border: 2px solid #36CAF9;
+    text-align: center;
     font-size: 1rem;
     margin: 1rem auto 0 auto;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 1.5rem;
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
-  }
-  .carousel__button__main a {
-    padding: 0.5rem 1.5rem;
   }
   .carousel__button__main:hover {
     font-size: 1.1rem;
@@ -1255,7 +1254,6 @@ button:hover {
     padding: 1rem;
   }
   .carousel__button__main {
-    display: block;
     font-family: "Lato", "Verdana", "San serif";
     font-style: normal;
     font-weight: normal;
@@ -1265,6 +1263,7 @@ button:hover {
     -webkit-text-fill-color: transparent;
     border-radius: 4px;
     border: 2px solid #36CAF9;
+    text-align: center;
     font-size: 1rem;
     margin: 1rem auto 0 auto;
     padding: 0.5rem 0rem;
@@ -1395,7 +1394,6 @@ button:hover {
     padding: 1rem;
   }
   .carousel__button__main {
-    display: block;
     font-family: "Lato", "Verdana", "San serif";
     font-style: normal;
     font-weight: normal;
@@ -1405,6 +1403,7 @@ button:hover {
     -webkit-text-fill-color: transparent;
     border-radius: 4px;
     border: 2px solid #36CAF9;
+    text-align: center;
     font-size: 1rem;
     margin: 1rem auto 0 auto;
     padding: 0.5rem 0rem;
