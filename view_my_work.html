@@ -5,13 +5,22 @@
 	<title>Steve Piraud | Portfolio</title>
 	<meta name="description" content="Steve Piraud's Portfolio | User Experience Design | User Interface Design">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
 	<meta charset="utf-8"/>
+	<!--  Fonts  -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<!--  Style css  -->
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<!--  Slick css  -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+	<!--  Swiper css  -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -29,9 +38,9 @@
 	</header>
 	
 	<main>
-	<!--carousel-->
-			<div class="carousel">
+	<!--carousel created from scratch
 
+			<div class="carousel">
 				<button class="carousel__button carousel__button--left">
 					<img src="images/left_arrow.svg" alt="">
 				</button>
@@ -73,12 +82,54 @@
 				</div>
 
 			</div>
+			-->
+
+	<!--carousel from slicker library-->
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<figure class="carousel__images-container"><img class="carousel__images" src="images/orphee_logo.png" alt="Logo application orphée"></figure>
+					<p class="carousel__project-summary">Orphée is a mobile application project which allows music producers to create music everywhere and whenever they want. The created projects can be transfer and converted to the music editing software they are using on their computer.
+					</p>
+					<a class="carousel__button__main" href="view_my_project_orphee.html">See More</a>
+				</div>
+				<div class="swiper-slide">
+					<figure class="carousel__images-container"><img class="carousel__images" src="images/ariane_logo.png" alt="Logo application ariane"></figure>
+					<p class="carousel__project-summary">Ariane is a mobile application project which permits to geolocate French citizens and prevent them from risks of their hosting country by listing all necessary information and contacts if there are problems occuring in the country.
+					</p>
+					<a class="carousel__button__main" href="view_my_project_ariane.html">See More</a>
+				</div>
+				<div class="swiper-slide">
+					<figure class="carousel__images-container"><img class="carousel__images" src="images/wonderfood_logo.png" alt="Logo website wonderfood"></figure>
+					<p class="carousel__project-summary">Wonderfood is a restaurant website project which allow the client to order his food online which will be delivered regarding the exact position they are. The colorful design of the mock-ups was done with the purpose of targeting students.
+					</p>
+					<a class="carousel__button__main" href="view_my_project_wonderfood.html">See More</a>
+				</div>
+			</div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
 
 
 		
 	</main>
 
-    <script src ="js/portfolio.js"></script>
+	
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Slick -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<!-- Swiper -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- javaScript -->
+	<script src ="js/portfolio.js"></script>
 </body>
 
 </html>

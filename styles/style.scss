@@ -131,8 +131,8 @@ button {
 
 /*SMALL DEVICES -- Most of the Smartphones Mobiles (Portrait)*/
 @media only screen and (min-width: 320px) {
-    /*homepage*/
 
+    /*homepage*/
         .name {
             font-size: 2rem;
             line-height: 60%;
@@ -241,13 +241,13 @@ button {
             width: 100%;
         }
 
-        /*carousel*/
+        /*carousel scratch style
         .carousel {
             position: relative;
             height: 430px;
             width: 80%;
             margin: 0 auto 0 auto;
-            /*background: lightskyblue;*/
+            background: lightskyblue;
         }
 
         .carousel__images-container {
@@ -267,7 +267,7 @@ button {
             position: relative;
             overflow: hidden;
             margin-top: 0;
-            /*background: lightgreen;*/
+            background: lightgreen;
         }
 
         .carousel__track {
@@ -346,8 +346,75 @@ button {
 
         .carousel__indicator.current-slide {
             background: rgba($color: #36CAF9, $alpha: 1);
-        }
+        }*/
 
+        /*carousel slicker style*/
+
+            .swiper-container {
+                margin-top: 2rem;
+                width: 100%;
+                height: 440px;
+                margin-left: auto;
+                margin-right: auto;
+
+                .carousel__images-container {
+                    width: 150px;
+                    height: 60px;
+                    @include marginCenter();
+                    margin-top: 0;
+
+                    .carousel__images {
+                        width: 100%;
+                        @include marginCenter();
+                    }
+                }
+
+                .carousel__project-summary {
+                    width: 70%;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    margin: 1rem auto 0 auto;
+                    padding: 1rem;
+                }
+
+                .carousel__button__main {
+                    @include buttonStyle();
+                    display: block;
+                    font-size: 1rem;
+                    margin: 1rem auto 0 auto;
+                    padding: 0.5rem 1rem;
+                    width: 25%;
+                }
+
+                .swiper-button-prev, .swiper-button-next {
+                    &:active, &:focus { 
+                        outline-style: none; 
+                    }
+                }
+
+                .swiper-button-prev::after, .swiper-button-next::after {
+                    color: rgb(180, 180, 180);
+                    font-size: 20px;
+                }
+
+                .swiper-pagination-bullet {
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid #36CAF9;
+                    background: none;
+                    &:active, &:focus { 
+                        outline-style: none; 
+                    }
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: rgba($color: #36CAF9, $alpha: 1);
+                    &:active, &:focus { 
+                        outline-style: none; 
+                    }
+                }
+
+            }
 
     /*view my project - orphée*/
 
@@ -621,18 +688,6 @@ button {
         position: static;
     }
 
-    /*View my work*/
-    .carousel {
-        height: 320px;
-    }
-
-    .carousel__slide {
-        top: 0px;
-    }
-
-    .carousel__nav {
-        display: none;
-    }
 }
 
 /*SMALL DEVICES -- Low Resolution Tablets, Mobiles (Landscape)*/
@@ -679,19 +734,6 @@ button {
 
     .copyright {
         position: static;
-    }
-
-    /*View my work*/
-    .carousel {
-        height: 300px;
-    }
-
-    .carousel__slide {
-        top: 0px;
-    }
-
-    .carousel__nav {
-        display: none;
     }
 
 }
@@ -745,27 +787,43 @@ button {
     /*View my work*/
     
     
+    /*carousel slicker style*/
+    
     .carousel {
-        width: 60%;
-    }
-
-    nav > ul {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+
+        .carousel__images-container {
+            width: 150px;
+            height: 60px;
+            @include marginCenter();
+            margin-top: 0;
+
+            .carousel__images {
+                width: 100%;
+                @include marginCenter();
+            }
+        }
+
+        .carousel__project-summary {
+            width: 70%;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin: 1rem auto 0 auto;
+            padding: 1rem;
+        }
+
+        .carousel__button__main {
+            @include buttonStyle();
+            display: block;
+            font-size: 1rem;
+            margin: 1rem auto 0 auto;
+            padding: 0.5rem 1rem;
+            width: 25%;
+        }
     }
 
     .spaceDiv {
         height: 150px;
-    }
-
-    .carousel__nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 3rem;
-    }
-
-    .carousel__track-container {
-        margin-top: 9rem;
     }
 
     /*About*/
@@ -917,124 +975,39 @@ button {
         width: 100%;
     }
 
-    /*carousel*/
+    /*carousel slicker style*/
+    
     .carousel {
-        position: relative;
-        height: 420px;
-        width: 60%;
-        margin: 0 auto 0 auto;
-        /*background: lightskyblue;*/
-    }
+        margin-top: 2rem;
 
-    .carousel__images {
-        width: 100%;
-        @include marginCenter();
-    }
+        .carousel__images-container {
+            width: 150px;
+            height: 60px;
+            @include marginCenter();
+            margin-top: 0;
 
-    .carousel__images-container {
-        width: 200px;
-        height: 100px;
-        @include marginCenter();
-    }
-
-    .carousel__track-container {
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-        margin-top: 0;
-        /*background: lightgreen;*/
-    }
-
-    .carousel__track {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        transition: 250ms ease-in;
-    }
-
-    .carousel__slide {
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .carousel__button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: transparent;
-        border: 0;
-        &:hover {
-            cursor: pointer;
+            .carousel__images {
+                width: 100%;
+                @include marginCenter();
+            }
         }
-        &:active, &:focus { 
-            outline-style: none; 
+
+        .carousel__project-summary {
+            width: 70%;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin: 1rem auto 0 auto;
+            padding: 1rem;
         }
-    }
 
-    .carousel__button--left {
-        left: -50px;
-    }
-
-    .carousel__button--right {
-        right: -50px;
-    }
-
-    .carousel__button img {
-        width: 10px;
-    }
-
-    .carousel__nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        padding: 0;
-    }
-
-    .carousel__project-title {
-        font-size: 4rem;
-        width: 90%;
-        margin: 8rem auto 0 auto;
-        display: none;
-    }
-
-    .carousel__project-summary {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 2rem;
-        margin: 1rem auto 0 auto;
-        padding: 1rem;
-    }
-
-    .carousel__button__main {
-        @include buttonStyle();
-        font-size: 1rem;
-        margin: 1rem auto 0 auto;
-        padding: 0.5rem 1.5rem;
-        transition: font-size 0.3s;
-        &:hover {
-            font-size: 1.1rem;
+        .carousel__button__main {
+            @include buttonStyle();
+            display: block;
+            font-size: 1rem;
+            margin: 1rem auto 0 auto;
+            padding: 0.5rem 1rem;
+            width: 25%;
         }
-    }
-
-    .carousel__indicator {
-        border: 0.6px solid #36CAF9;
-        border-radius: 50%;
-        width: 0.8rem;
-        height: 0.8rem;
-        background: none;
-        margin: 0 10px;
-        &:hover {
-            cursor: pointer;
-        }
-        &:active, &:focus { 
-            outline-style: none; 
-        }
-    }
-
-    .carousel__indicator.current-slide {
-        background: rgba($color: #36CAF9, $alpha: 1);
     }
 
 
@@ -1273,127 +1246,6 @@ button {
 
 /*LARGE DEVICES -- Laptops, Desktops --> 1024px and larger*/
 @media only screen and (min-width: 1024px) {
-    /*carousel*/
-    .carousel {
-        position: relative;
-        height: 420px;
-        width: 50%;
-        margin: 0 auto 0 auto;
-        /*background: lightskyblue;*/
-    }
-
-    .carousel__images {
-        width: 100%;
-        @include marginCenter();
-    }
-
-    .carousel__images-container {
-        width: 200px;
-        height: 100px;
-        @include marginCenter();
-    }
-
-    .carousel__track-container {
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-        /*background: lightgreen;*/
-    }
-
-    .carousel__track {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        transition: 250ms ease-in;
-    }
-
-    .carousel__slide {
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .carousel__button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: transparent;
-        border: 0;
-        &:hover {
-            cursor: pointer;
-        }
-        &:active, &:focus { 
-            outline-style: none; 
-        }
-    }
-
-    .carousel__button--left {
-        left: -50px;
-    }
-
-    .carousel__button--right {
-        right: -50px;
-    }
-
-    .carousel__button img {
-        width: 10px;
-    }
-
-    .carousel__nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        padding: 0;
-    }
-
-    .carousel__project-title {
-        font-size: 4rem;
-        width: 90%;
-        margin: 8rem auto 0 auto;
-        display: none;
-    }
-
-    .carousel__project-summary {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 2rem;
-        margin: 1rem auto 0 auto;
-        padding: 1rem;
-    }
-
-    .carousel__button__main {
-        @include buttonStyle();
-        font-size: 1rem;
-        margin: 1rem auto 0 auto;
-        padding: 0.5rem 0rem;
-        transition: font-size 0.3s;
-        a {
-            padding: 0.5rem 1.5rem;
-        }
-        &:hover {
-            font-size: 1.1rem;
-        }
-    }
-
-    .carousel__indicator {
-        border: 0.6px solid #36CAF9;
-        border-radius: 50%;
-        width: 0.6rem;
-        height: 0.6rem;
-        background: none;
-        margin: 0 10px;
-        &:hover {
-            cursor: pointer;
-        }
-        &:active, &:focus { 
-            outline-style: none; 
-        }
-    }
-
-    .carousel__indicator.current-slide {
-        background: rgba($color: #36CAF9, $alpha: 1);
-    }
 }
 
 /*LARGE DEVICES -- Desktops --> 1200px and larger*/
@@ -1411,127 +1263,6 @@ button {
         margin-right: 17rem;
     }
 
-    /*carousel*/
-    .carousel {
-        position: relative;
-        height: 450px;
-        width: 40%;
-        margin: 0 auto 0 auto;
-        /*background: lightskyblue;*/
-    }
-
-    .carousel__images {
-        width: 100%;
-        @include marginCenter();
-    }
-
-    .carousel__images-container {
-        width: 200px;
-        height: 100px;
-        @include marginCenter();
-    }
-
-    .carousel__track-container {
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-        /*background: lightgreen;*/
-    }
-
-    .carousel__track {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        transition: 250ms ease-in;
-    }
-
-    .carousel__slide {
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .carousel__button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: transparent;
-        border: 0;
-        &:hover {
-            cursor: pointer;
-        }
-        &:active, &:focus { 
-            outline-style: none; 
-        }
-    }
-
-    .carousel__button--left {
-        left: -50px;
-    }
-
-    .carousel__button--right {
-        right: -50px;
-    }
-
-    .carousel__button img {
-        width: 10px;
-    }
-
-    .carousel__nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        padding: 0;
-    }
-
-    .carousel__project-title {
-        font-size: 4rem;
-        width: 90%;
-        margin: 8rem auto 0 auto;
-        display: none;
-    }
-
-    .carousel__project-summary {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 2rem;
-        margin: 1rem auto 0 auto;
-        padding: 1rem;
-    }
-
-    .carousel__button__main {
-        @include buttonStyle();
-        font-size: 1rem;
-        margin: 1rem auto 0 auto;
-        padding: 0.5rem 0rem;
-        transition: font-size 0.3s;
-        a {
-            padding: 0.5rem 1.5rem;
-        }
-        &:hover {
-            font-size: 1.1rem;
-        }
-    }
-
-    .carousel__indicator {
-        border: 0.6px solid #36CAF9;
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-        background: none;
-        margin: 0 10px;
-        &:hover {
-            cursor: pointer;
-        }
-        &:active, &:focus { 
-            outline-style: none; 
-        }
-    }
-
-    .carousel__indicator.current-slide {
-        background: rgba($color: #36CAF9, $alpha: 1);
-    }
 }
 
 /*LARGE DEVICES -- Desktops --> 1360px and larger*/
