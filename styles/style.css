@@ -106,7 +106,7 @@ button:hover {
     font-size: 2rem;
     line-height: 60%;
     margin-left: 4rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .profession {
     line-height: 130%;
@@ -118,10 +118,12 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     width: 45%;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    border: 2px solid white;
+    border-radius: 100%;
   }
   #homepageMenu {
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   .itemsMenu {
     text-align: center;
@@ -137,7 +139,7 @@ button:hover {
   }
   .socialNetworks-container {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .socialNetworks_logo {
     width: 30px;

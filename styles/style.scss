@@ -137,7 +137,7 @@ button {
             font-size: 2rem;
             line-height: 60%;
             margin-left: 4rem;
-            margin-top: 4rem;
+            margin-top: 2rem;
         }
 
         .profession {
@@ -149,11 +149,13 @@ button {
         .imageprofile {
             @include marginCenter();
             width: 45%;
-            margin-top: 4rem;
+            margin-top: 2rem;
+            border: 2px solid white;
+            border-radius: 100%;
         }
 
         #homepageMenu {
-            margin: 4rem 0;
+            margin: 2rem 0;
         }
 
         .itemsMenu {
@@ -171,7 +173,7 @@ button {
 
         .socialNetworks-container {
             text-align: center;
-            margin-top: 4rem;
+            margin-top: 2rem;
         }
     
         .socialNetworks_logo {
