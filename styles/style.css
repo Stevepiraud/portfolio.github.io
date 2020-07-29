@@ -307,7 +307,7 @@ button:hover {
         .carousel__indicator.current-slide {
             background: rgba($color: #36CAF9, $alpha: 1);
         }*/
-  /*carousel slicker style*/
+  /*carousel swiper style*/
   .swiper-container {
     margin-top: 2rem;
     width: 100%;
@@ -707,47 +707,23 @@ button:hover {
     margin-top: 2rem;
   }
   /*View my work*/
-  /*carousel slicker style*/
-  .carousel {
-    margin-top: 2rem;
-  }
-  .carousel .carousel__images-container {
-    width: 150px;
-    height: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-  }
-  .carousel .carousel__images-container .carousel__images {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .carousel .carousel__project-summary {
+  /*carousel*/
+  .swiper-container {
     width: 70%;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 1rem auto 0 auto;
-    padding: 1rem;
-  }
-  .carousel .carousel__button__main {
-    font-family: "Lato", "Verdana", "San serif";
-    font-style: normal;
-    font-weight: normal;
-    background: -webkit-linear-gradient(90deg, #36CAF9 0%, #9CE7FF 122.78%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-radius: 4px;
-    border: 2px solid #36CAF9;
-    text-align: center;
+    height: 400px;
     display: block;
-    font-size: 1rem;
-    margin: 1rem auto 0 auto;
-    padding: 0.5rem 1rem;
-    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+  }
+  .swiper-container .carousel__button__main {
+    width: 15%;
+  }
+  .swiper-container .swiper-button-prev {
+    left: 25px;
+  }
+  .swiper-container .swiper-button-next {
+    right: 25px;
   }
   .spaceDiv {
     height: 150px;
@@ -886,47 +862,22 @@ button:hover {
     overflow: hidden;
     width: 100%;
   }
-  /*carousel slicker style*/
-  .carousel {
-    margin-top: 2rem;
-  }
-  .carousel .carousel__images-container {
-    width: 150px;
-    height: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-  }
-  .carousel .carousel__images-container .carousel__images {
-    width: 100%;
+  /*carousel*/
+  .swiper-container {
+    width: 60%;
+    height: 360px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .carousel .carousel__project-summary {
-    width: 70%;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 1rem auto 0 auto;
-    padding: 1rem;
+  .swiper-container .carousel__button__main {
+    width: 12%;
   }
-  .carousel .carousel__button__main {
-    font-family: "Lato", "Verdana", "San serif";
-    font-style: normal;
-    font-weight: normal;
-    background: -webkit-linear-gradient(90deg, #36CAF9 0%, #9CE7FF 122.78%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-radius: 4px;
-    border: 2px solid #36CAF9;
-    text-align: center;
-    display: block;
-    font-size: 1rem;
-    margin: 1rem auto 0 auto;
-    padding: 0.5rem 1rem;
-    width: 25%;
+  .swiper-container .swiper-button-prev {
+    left: 25px;
+  }
+  .swiper-container .swiper-button-next {
+    right: 25px;
   }
   /*view my project - orphée*/
   .viewMyProject {

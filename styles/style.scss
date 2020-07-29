@@ -348,7 +348,7 @@ button {
             background: rgba($color: #36CAF9, $alpha: 1);
         }*/
 
-        /*carousel slicker style*/
+        /*carousel swiper style*/
 
             .swiper-container {
                 margin-top: 2rem;
@@ -785,42 +785,25 @@ button {
     }
 
     /*View my work*/
-    
-    
-    /*carousel slicker style*/
-    
-    .carousel {
-        margin-top: 2rem;
-
-        .carousel__images-container {
-            width: 150px;
-            height: 60px;
-            @include marginCenter();
-            margin-top: 0;
-
-            .carousel__images {
-                width: 100%;
-                @include marginCenter();
-            }
-        }
-
-        .carousel__project-summary {
-            width: 70%;
-            font-size: 1rem;
-            line-height: 1.5rem;
-            margin: 1rem auto 0 auto;
-            padding: 1rem;
-        }
-
+    /*carousel*/
+    .swiper-container {
+        width: 70%;
+        height: 400px;
+        @include marginCenter();
+        margin-top: 8rem;
         .carousel__button__main {
-            @include buttonStyle();
-            display: block;
-            font-size: 1rem;
-            margin: 1rem auto 0 auto;
-            padding: 0.5rem 1rem;
-            width: 25%;
+            width: 15%;
+        }
+
+        .swiper-button-prev {
+            left: 25px;
+        }
+
+        .swiper-button-next {
+            right: 25px;
         }
     }
+    
 
     .spaceDiv {
         height: 150px;
@@ -975,38 +958,21 @@ button {
         width: 100%;
     }
 
-    /*carousel slicker style*/
-    
-    .carousel {
-        margin-top: 2rem;
-
-        .carousel__images-container {
-            width: 150px;
-            height: 60px;
-            @include marginCenter();
-            margin-top: 0;
-
-            .carousel__images {
-                width: 100%;
-                @include marginCenter();
-            }
-        }
-
-        .carousel__project-summary {
-            width: 70%;
-            font-size: 1rem;
-            line-height: 1.5rem;
-            margin: 1rem auto 0 auto;
-            padding: 1rem;
-        }
-
+    /*carousel*/
+    .swiper-container {
+        width: 60%;
+        height: 360px;
+        @include marginCenter();
         .carousel__button__main {
-            @include buttonStyle();
-            display: block;
-            font-size: 1rem;
-            margin: 1rem auto 0 auto;
-            padding: 0.5rem 1rem;
-            width: 25%;
+            width: 12%;
+        }
+
+        .swiper-button-prev {
+            left: 25px;
+        }
+
+        .swiper-button-next {
+            right: 25px;
         }
     }
 
