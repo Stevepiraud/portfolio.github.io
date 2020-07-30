@@ -137,6 +137,12 @@ button:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .itemsMenu a:active {
+    background: #36CAF9;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .socialNetworks-container {
     text-align: center;
     margin-top: 2rem;
@@ -185,6 +191,9 @@ button:hover {
     color: #929292;
     font-size: 1.2rem;
     padding: 10px;
+  }
+  nav ul li a:active {
+    color: #36CAF9;
   }
   /*navbar with current page markup*/
   .current {
@@ -532,7 +541,9 @@ button:hover {
     margin: 1rem 0;
   }
   .ariane__images.functions {
-    margin: 4rem 0;
+    display: block;
+    margin: 2rem auto;
+    width: 40%;
   }
   .projectDescription__sub__title {
     padding-left: 1rem;
@@ -577,10 +588,6 @@ button:hover {
   .presentation-container {
     overflow: auto;
   }
-  .presentation__text-container-2, .presentation__text-container-3 {
-    margin-top: 1rem;
-    /*background: lightskyblue;*/
-  }
   .presentation__text {
     font-size: 1rem;
     padding: 1rem;
@@ -619,6 +626,10 @@ button:hover {
   }
   .socialNetworks-container {
     margin-top: 2rem;
+  }
+  /*view my project - ariane*/
+  .ariane__images.functions {
+    width: 40%;
   }
   /*footer*/
   footer {
@@ -659,6 +670,10 @@ button:hover {
   }
   .socialNetworks-container {
     margin-top: 2rem;
+  }
+  /*view my project - ariane*/
+  .ariane__images.functions {
+    width: 40%;
   }
   /*footer*/
   footer {
@@ -709,6 +724,10 @@ button:hover {
     margin-top: 2rem;
   }
   /*View my work*/
+  /*nav*/
+  .spaceDiv {
+    height: 50px;
+  }
   /*carousel*/
   .swiper-container {
     width: 70%;
@@ -726,9 +745,6 @@ button:hover {
   }
   .swiper-container .swiper-button-next {
     right: 25px;
-  }
-  .spaceDiv {
-    height: 150px;
   }
   /*About*/
   #presentation {
@@ -786,6 +802,12 @@ button:hover {
   .itemsMenu a:hover {
     font-size: 1.2rem;
   }
+  .itemsMenu a:active {
+    background: #36CAF9;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .socialNetworks-container {
     text-align: center;
     margin-top: 4rem;
@@ -793,11 +815,15 @@ button:hover {
   .socialNetworks_logo {
     width: 40px;
     margin: 0 0.3rem;
-    -webkit-transition: width 0.5s;
-    transition: width 0.5s;
+    -webkit-transition: width 0.4s, -webkit-transform 0.5s;
+    transition: width 0.4s, -webkit-transform 0.5s;
+    transition: width 0.4s, transform 0.5s;
+    transition: width 0.4s, transform 0.5s, -webkit-transform 0.5s;
   }
   .socialNetworks_logo:hover {
     width: 50px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   footer {
     /*background: black;*/
@@ -843,9 +869,14 @@ button:hover {
     color: #929292;
     font-size: 1rem;
     padding: 10px;
+    -webkit-transition: color 0.7s;
+    transition: color 0.7s;
+  }
+  nav ul li a:hover {
+    color: #36CAF9;
   }
   .spaceDiv {
-    height: 100px;
+    height: 90px;
   }
   /*navbar with current page markup*/
   .current {
@@ -871,9 +902,17 @@ button:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4rem;
   }
   .swiper-container .carousel__button__main {
     width: 12%;
+  }
+  .swiper-container .carousel__button__main a {
+    -webkit-transition: font-size ease-in 1s;
+    transition: font-size ease-in 1s;
+  }
+  .swiper-container .carousel__button__main a:hover {
+    font-size: 1.5rem;
   }
   .swiper-container .swiper-button-prev {
     left: 25px;
@@ -1036,12 +1075,10 @@ button:hover {
     width: 40%;
   }
   .ariane__images.usecases {
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   .ariane__images.functions {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 20%;
   }
   .projectDescription__sub__title {
     padding-left: 1rem;
@@ -1082,9 +1119,9 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     width: 60%;
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 2px;
   }

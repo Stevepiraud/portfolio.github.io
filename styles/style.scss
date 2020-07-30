@@ -169,6 +169,15 @@ button {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            a {
+                &:active {
+                    background: #36CAF9;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
         }
 
         .socialNetworks-container {
@@ -205,25 +214,28 @@ button {
             /*background: lightblue;*/
             position: sticky;
             overflow: hidden;
-        }
 
-        nav ul {
-            margin: 0 auto;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        nav ul li {
-            /*background: lightblue;*/
-            display: inline;
-            padding: 2rem 1rem;
-        }
-
-        nav ul li a {
-            @include menuStyle();
-            color: #929292;
-            font-size: 1.2rem;
-            padding: 10px;
+            ul {
+                margin: 0 auto;
+                text-align: center;
+                padding: 2rem 0;
+    
+                li {
+                    /*background: lightblue;*/
+                    display: inline;
+                    padding: 2rem 1rem;
+        
+                    a {
+                        @include menuStyle();
+                        color: #929292;
+                        font-size: 1.2rem;
+                        padding: 10px;
+                        &:active {
+                            color: #36CAF9;
+                        }
+                    }
+                }
+            }
         }
 
         /*navbar with current page markup*/
@@ -351,7 +363,6 @@ button {
         }*/
 
         /*carousel swiper style*/
-
             .swiper-container {
                 margin-top: 2rem;
                 width: 100%;
@@ -580,7 +591,9 @@ button {
         }
 
         .ariane__images.functions {
-            margin: 4rem 0;
+            display: block;
+            margin: 2rem auto;
+            width: 40%;
         }
 
         .projectDescription__sub__title {
@@ -630,11 +643,6 @@ button {
             overflow: auto;
             }
 
-        .presentation__text-container-2, .presentation__text-container-3 {
-            margin-top: 1rem;
-            /*background: lightskyblue;*/
-            }
-
         .presentation__text {
             font-size: 1rem;
             padding: 1rem;
@@ -679,6 +687,11 @@ button {
 
     .socialNetworks-container {
         margin-top: 2rem;
+    }
+
+    /*view my project - ariane*/
+    .ariane__images.functions {
+        width: 40%;
     }
 
     /*footer*/
@@ -727,6 +740,11 @@ button {
 
     .socialNetworks-container {
         margin-top: 2rem;
+    }
+
+    /*view my project - ariane*/
+    .ariane__images.functions {
+        width: 40%;
     }
 
     /*footer*/
@@ -787,6 +805,11 @@ button {
     }
 
     /*View my work*/
+    /*nav*/
+    .spaceDiv {
+        height: 50px;
+    }
+
     /*carousel*/
     .swiper-container {
         width: 70%;
@@ -804,11 +827,6 @@ button {
         .swiper-button-next {
             right: 25px;
         }
-    }
-    
-
-    .spaceDiv {
-        height: 150px;
     }
 
     /*About*/
@@ -867,10 +885,17 @@ button {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        
         a {
             transition: font-size 0.5s;
             &:hover {
                 font-size: 1.2rem;
+            }
+            &:active {
+                background: #36CAF9;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
     }
@@ -883,9 +908,10 @@ button {
     .socialNetworks_logo {
         width: 40px;
         margin: 0 0.3rem;
-        transition: width 0.5s;
+        transition: width 0.4s, transform 0.5s;
         &:hover {
             width: 50px;
+            transform: rotate(360deg);
         }
     }
 
@@ -914,33 +940,37 @@ button {
         /*background: lightblue;*/
         position: sticky;
         overflow: hidden;
-    }
 
-    nav ul {
-        margin: 0 auto;
-        text-align: center;
-        padding: 7rem 0;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
-
-    nav ul li {
-        /*background: lightblue;*/
-        display: inline;
-        padding: 10rem 3rem;
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-
-    nav ul li a {
-        @include menuStyle();
-        color: #929292;
-        font-size: 1rem;
-        padding: 10px;
+        ul {
+            margin: 0 auto;
+            text-align: center;
+            padding: 7rem 0;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+    
+            li {
+                /*background: lightblue;*/
+                display: inline;
+                padding: 10rem 3rem;
+                padding-bottom: 0;
+                padding-top: 0;
+        
+                a {
+                    @include menuStyle();
+                    color: #929292;
+                    font-size: 1rem;
+                    padding: 10px;
+                    transition: color 0.7s;
+                    &:hover {
+                        color: #36CAF9;
+                    }
+                }
+            }
+        }
     }
 
     .spaceDiv {
-        height: 100px;
+        height: 90px;
     }
 
     /*navbar with current page markup*/
@@ -965,8 +995,15 @@ button {
         width: 60%;
         height: 360px;
         @include marginCenter();
+        margin-top: 4rem;
         .carousel__button__main {
             width: 12%;
+            a {
+                transition: font-size ease-in 1s;
+                &:hover {
+                    font-size: 1.5rem;
+                }
+            }
         }
 
         .swiper-button-prev {
@@ -1138,11 +1175,11 @@ button {
     }
 
     .ariane__images.usecases {
-        margin: 4rem 0;
+        margin: 2rem 0;
     }
 
     .ariane__images.functions {
-        @include marginCenter();
+        width: 20%;
     }
 
     .projectDescription__sub__title {
@@ -1188,9 +1225,9 @@ button {
     #presentation {
         @include marginCenter();
         margin-top: 2rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         width: 60%;
-        padding: 4rem 1rem;
+        padding: 1rem 1rem;
         background-color: rgba(255, 255, 255, 0.6);
         border-radius: 2px;
         }
