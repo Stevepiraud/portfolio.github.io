@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Steve Piraud | Portfolio</title>
+	<meta name="description" content="Steve Piraud Portfolio | User Experience Design | User Interface Design">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta charset="utf-8"/>
+	<!--  Fonts  -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<!--  Style css  -->
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<!--  Slick css  -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+	<!--  Swiper css  -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+
+	<!--navbar-->
+
+	<header class="navbar">
+		<nav>
+			<ul>
+				<li><a href="index.html">Acceuil</a></li>
+				<li><a class="current" href="view_my_work.html">Mes projets</a></li>
+				<li><a href="about.html">À propos</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+	<!--carousel created from scratch
+
+			<div class="carousel">
+				<button class="carousel__button carousel__button--left">
+					<img src="images/left_arrow.svg" alt="">
+				</button>
+
+				<div class="carousel__track-container">
+					<ul class="carousel__track">
+						<li class="carousel__slide current-slide">
+							<figure class="carousel__images-container"><img class="carousel__images" src="images/orphee_logo.png" alt="Logo application orphée"></figure>
+							<h2 class="carousel__project-title is-hidden">Orphée</h2>
+							<p class="carousel__project-summary">Orphée is a mobile application project which allows music producers to create music everywhere and whenever they want. The created projects can be transfer and converted to the music editing software they are using on their computer.
+							</p>
+							<a class="carousel__button__main" href="view_my_project_orphee.html">See More</a>
+						</li>
+						<li class="carousel__slide">
+							<figure class="carousel__images-container"><img class="carousel__images" src="images/ariane_logo.png" alt="Logo application ariane"></figure>
+							<h2 class="carousel__project-title is-hidden">Ariane</h2>
+							<p class="carousel__project-summary">Ariane is a mobile application project which permits to geolocate French citizens and prevent them from risks of their hosting country by listing all necessary information and contacts if there are problems occuring in the country.
+							</p>
+							<a class="carousel__button__main" href="view_my_project_ariane.html">See More</a>
+						</li>
+						<li class="carousel__slide">
+							<figure class="carousel__images-container"><img class="carousel__images" src="images/wonderfood_logo.png" alt="Logo website wonderfood"></figure>
+							<h2 class="carousel__project-title is-hidden">Wonderfood</h2>
+							<p class="carousel__project-summary">Wonderfood is a restaurant website project which allow the client to order his food online which will be delivered regarding the exact position they are. The colorful design of the mock-ups was done with the purpose of targeting students.
+							</p>
+							<a class="carousel__button__main" href="view_my_project_wonderfood.html">See More</a>
+						</li>
+					</ul>
+				</div>
+
+				<button class="carousel__button carousel__button--right">
+					<img src="images/right_arrow.svg" alt="">
+				</button>
+
+				<div class="carousel__nav">
+					<button class="carousel__indicator current-slide"></button>
+					<button class="carousel__indicator"></button>
+					<button class="carousel__indicator"></button>
+				</div>
+
+			</div>
+			-->
+
+	<!--carousel from slicker library-->
+		<!-- carousel -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<figure class="carousel__images-container"><img class="carousel__images" src="../images/orphee_logo.png" alt="Logo application orphée"></figure>
+					<p class="carousel__project-summary">Orphée est un projet d'application mobile qui permet aux producteurs de musique de composer partout et quand ils le souhaitent. Les projets créés peuvent être transférés et convertis dans le logiciel de musique assisté par ordinateur qu'ils utilisent sur leur propre ordinateur.
+					</p>
+					<a class="carousel__button__main" href="view_my_project_orphee.html">Voir le projet</a>
+				</div>
+				<div class="swiper-slide">
+					<figure class="carousel__images-container"><img class="carousel__images" src="../images/ariane_logo.png" alt="Logo application ariane"></figure>
+					<p class="carousel__project-summary">Ariane est un projet d'application mobile qui permet de géolocaliser les citoyens français et de les prévenir des risques de leur pays d'accueil en répertoriant toutes les informations et contacts nécessaires en cas de problème.
+					</p>
+					<a class="carousel__button__main" href="view_my_project_ariane.html">Voir le projet</a>
+				</div>
+				<div class="swiper-slide">
+					<figure class="carousel__images-container"><img class="carousel__images" src="../images/wonderfood_logo.png" alt="Logo website wonderfood"></figure>
+					<p class="carousel__project-summary">Wonderfood est un projet de site internet de restaurant qui permet au client de commander en ligne ses plats qui seront livrés en fonction de leur position exacte. Le design coloré des maquettes a été réalisé dans le but de cibler les étudiants.
+					</p>
+					<a class="carousel__button__main" href="view_my_project_wonderfood.html">Voir le projet</a>
+				</div>
+			</div>
+
+			<!-- navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+	</main>
+
+	
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Slick -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<!-- Swiper -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- javaScript -->
+	<script src ="../js/portfolio.js"></script>
+</body>
+
+</html>

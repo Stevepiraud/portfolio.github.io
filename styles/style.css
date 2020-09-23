@@ -99,6 +99,41 @@ button:hover {
   cursor: pointer;
 }
 
+.language_selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+
+.language {
+  font-family: "Lato", "Verdana", "San serif";
+  font-style: normal;
+  font-weight: 200;
+  color: #bbbbbb;
+  font-size: .8rem;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+}
+
+.language:hover {
+  color: #36CAF9;
+}
+
+.language.eng {
+  border-right: 1px solid #a8a8a8;
+  padding-right: .7rem;
+}
+
+.current_language {
+  color: #36CAF9;
+}
+
 /*SMALL DEVICES -- Most of the Smartphones Mobiles (Portrait)*/
 @media only screen and (min-width: 320px) {
   /*homepage*/
@@ -142,6 +177,9 @@ button:hover {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .language_selection {
+    padding-top: 2rem;
   }
   .socialNetworks-container {
     text-align: center;

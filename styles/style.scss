@@ -129,6 +129,34 @@ button {
     }
 }
 
+.language_selection {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+
+.language {
+    @include menuStyle();
+    color: #bbbbbb;
+    font-size: .8rem;
+    transition: color 0.7s;
+    &:hover {
+        color: #36CAF9;
+    }
+}
+
+.language.eng {
+    border-right: 1px solid rgb(168, 168, 168);
+    padding-right: .7rem;
+}
+
+.current_language {
+    color: #36CAF9;
+}
+
+
 /*SMALL DEVICES -- Most of the Smartphones Mobiles (Portrait)*/
 @media only screen and (min-width: 320px) {
 
@@ -178,6 +206,10 @@ button {
                     -webkit-text-fill-color: transparent;
                 }
             }
+        }
+
+        .language_selection {
+            padding-top: 2rem;
         }
 
         .socialNetworks-container {
