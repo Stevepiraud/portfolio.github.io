@@ -6,9 +6,7 @@
   }
 
   //Site Mapping
-  .project-story-description-container.functions.thesliderz.mobile,
-  .project-story-description-container.functions.orphee.mobile,
-  .project-story-description-container.functions.wonderfood.mobile {
+  .project-story-description-container.functions.thesliderz.mobile {
     display: none;
   }
 
@@ -374,8 +372,38 @@
     display: none;
   }
 
-  .project-story-card-transitions {
-    @include flex(column, center, center);
+  //Content to display
+  //TheSliderz
+  .project-story-description-container.functions.thesliderz.mobile {
+    display: block;
+  }
+
+  //Orphée
+  .project-story-description-container.mythology.orphee.mobile,
+  .project-story-description-container.imagine.orphee.mobile,
+  .project-story-description-container.problem.orphee.mobile,
+  .project-story-description-container.user.orphee.mobile,
+  .project-story-description-container.functions.orphee.mobile,
+  .project-story-description-container.logo-conception.orphee.mobile {
+    display: block;
+  }
+
+  //Wonderfood
+  .project-story-description-container.user.wonderfood.mobile,
+  .project-story-description-container.needs.wonderfood.mobile,
+  .project-story-description-container.functions.wonderfood.mobile,
+  .project-story-description-container.moodboard.wonderfood.mobile {
+    display: block;
+  }
+
+  //Ariane
+  .project-story-description-container.intro.ariane.mobile,
+  .project-story-description-container.solution.ariane.mobile,
+  .project-story-description-container.stakeholders-interest.ariane.mobile,
+  .project-story-description-container.uxdesign.ariane.mobile,
+  .project-story-description-container.social.ariane.mobile,
+  .project-story-description-container.gamification.ariane.mobile {
+    display: block;
   }
 
   #btn-scroll-to-top {
@@ -980,6 +1008,10 @@
   .project-story.moodboard.wonderfood {
     margin-top: 2rem;
   }
+  .img-moodboard-container {
+    margin-top: 2rem;
+    width: 90%;
+  }
 
   //Logo Design Process
   .project-story-description-container.logo-conception.wonderfood {
@@ -1074,6 +1106,7 @@
     min-height: auto;
   }
   .img-social-container.ariane {
+    @include flex(row, center, center);
     margin: 2rem 0;
   }
   .project-story.social.ariane {
@@ -1088,6 +1121,7 @@
     min-height: auto;
   }
   .img-gamification-container.ariane {
+    @include flex(row, center, center);
     margin: 2rem 0;
   }
   .project-story.gamification.ariane {

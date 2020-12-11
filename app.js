@@ -1232,7 +1232,7 @@ barba.init({
       afterEnter() {
         //Link To client's review
         $("#link-customer-review-fr").click(() => {
-          window.location.href =
+          document.location.href =
             "/fr/portfolio/thesliderz.html#client-review-fr";
         });
       },

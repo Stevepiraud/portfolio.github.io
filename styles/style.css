@@ -1152,7 +1152,8 @@ body {
 }
 
 .project-story-card-transitions svg {
-  width: 20%;
+  padding: 1.6rem;
+  width: 25%;
 }
 
 .project-story-introduction-container {
@@ -1310,7 +1311,7 @@ body {
 
 .popup-site-mapping-container {
   width: 50%;
-  height: 80%;
+  min-height: 80vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1348,7 +1349,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
 .popup-site-mapping button {
@@ -1373,7 +1373,7 @@ body {
 .popup-site-mapping iframe {
   border: none;
   width: 100%;
-  height: 90%;
+  height: 70vh;
   padding: 1.6rem 1.6rem 0rem 1.6rem;
 }
 
@@ -2081,6 +2081,7 @@ body {
   border-radius: 10px;
   padding: 2.4rem;
   background: #333333;
+  width: 40%;
 }
 
 .interest-list-items p:nth-child(1) {
@@ -3191,9 +3192,7 @@ footer p {
   .nav-bar-mobile {
     display: none;
   }
-  .project-story-description-container.functions.thesliderz.mobile,
-  .project-story-description-container.functions.orphee.mobile,
-  .project-story-description-container.functions.wonderfood.mobile {
+  .project-story-description-container.functions.thesliderz.mobile {
     display: none;
   }
   .project-story-description-container.mythology.orphee.mobile,
@@ -3530,20 +3529,30 @@ footer p {
   .project-story-description-container.gamification.ariane.desktop {
     display: none;
   }
-  .project-story-card-transitions {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .project-story-description-container.functions.thesliderz.mobile {
+    display: block;
+  }
+  .project-story-description-container.mythology.orphee.mobile,
+  .project-story-description-container.imagine.orphee.mobile,
+  .project-story-description-container.problem.orphee.mobile,
+  .project-story-description-container.user.orphee.mobile,
+  .project-story-description-container.functions.orphee.mobile,
+  .project-story-description-container.logo-conception.orphee.mobile {
+    display: block;
+  }
+  .project-story-description-container.user.wonderfood.mobile,
+  .project-story-description-container.needs.wonderfood.mobile,
+  .project-story-description-container.functions.wonderfood.mobile,
+  .project-story-description-container.moodboard.wonderfood.mobile {
+    display: block;
+  }
+  .project-story-description-container.intro.ariane.mobile,
+  .project-story-description-container.solution.ariane.mobile,
+  .project-story-description-container.stakeholders-interest.ariane.mobile,
+  .project-story-description-container.uxdesign.ariane.mobile,
+  .project-story-description-container.social.ariane.mobile,
+  .project-story-description-container.gamification.ariane.mobile {
+    display: block;
   }
   #btn-scroll-to-top {
     right: 3.2rem;
@@ -4374,6 +4383,10 @@ footer p {
   .project-story.moodboard.wonderfood {
     margin-top: 2rem;
   }
+  .img-moodboard-container {
+    margin-top: 2rem;
+    width: 90%;
+  }
   .project-story-description-container.logo-conception.wonderfood {
     margin-top: 4rem;
   }
@@ -4520,6 +4533,19 @@ footer p {
     min-height: auto;
   }
   .img-social-container.ariane {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 2rem 0;
   }
   .project-story.social.ariane {
@@ -4544,6 +4570,19 @@ footer p {
     min-height: auto;
   }
   .img-gamification-container.ariane {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 2rem 0;
   }
   .project-story.gamification.ariane {
