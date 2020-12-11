@@ -1106,10 +1106,6 @@ body {
   pointer-events: none;
 }
 
-.fas.fa-arrow-circle-up.homepage {
-  display: none;
-}
-
 .project-story-card-transitions-container {
   display: -webkit-box;
   display: -ms-flexbox;
