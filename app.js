@@ -197,9 +197,11 @@ barba.init({
           "#bgContainer-text-en h3"
         );
         //Pop-up
-        const closeIcon = document.querySelector(".workInProgress-close-btn");
+        const closeIcon = document.querySelector(
+          "#work-in-progress-close-btn-en"
+        );
         const workInProgressContainer = document.querySelector(
-          ".workInProgress-container"
+          "#work-in-progress-en"
         );
         //Baby Yoda img
         const babyYodaContainer = document.querySelector(
@@ -357,9 +359,11 @@ barba.init({
           "#bgContainer-text-fr h3"
         );
         //Pop-up
-        const closeIcon = document.querySelector(".workInProgress-close-btn");
+        const closeIcon = document.querySelector(
+          "#work-in-progress-close-btn-fr"
+        );
         const workInProgressContainer = document.querySelector(
-          ".workInProgress-container"
+          "#work-in-progress-fr"
         );
         //Baby Yoda img
         const babyYodaContainer = document.querySelector(
