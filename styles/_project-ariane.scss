@@ -40,14 +40,15 @@
 
 //SECTION STORY - Stakeholders interests - list
 .project-story.interest {
-  min-height: 90vh;
   @include flex(column, space-evenly, center);
+  margin: 0;
 }
 .interest-list-container {
   @include flex(row, center, center);
+  margin-top: 2rem;
 
   svg {
-    width: 15%;
+    width: 10%;
     margin: 0rem 4rem;
   }
 }
@@ -64,14 +65,12 @@
 //SECTION STORY - User experience - Use cases
 //Left Side
 .project-story.uxdesign.ariane {
-  flex: 1 1 60%;
-  min-height: 90vh;
-  max-width: 48rem;
+  max-width: 56rem;
   @include flex(column, center, flex-start);
 }
 //Right Side
 .img-uxdesign-container.ariane {
-  flex: 1 1 40%;
+  width: 32rem;
   img {
     width: 100%;
     border-radius: 10px;
@@ -81,33 +80,29 @@
 //SECTION STORY - User experience - Social network function
 //Left Side
 .img-social-container.ariane {
-  flex: 1 1 40%;
-  @include flex(row, center, center);
+  @include flex(row, flex-end, center);
   img {
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
   }
 }
 //Right Side
 .project-story.social.ariane {
-  flex: 1 1 60%;
-  min-height: 90vh;
   @include flex(column, center, flex-start);
+  max-width: 56rem;
 }
 
 //SECTION STORY - User experience - Gamification function
 //Left Side
 .project-story.gamification.ariane {
-  flex: 1 1 60%;
-  min-height: 90vh;
   @include flex(column, center, flex-start);
+  max-width: 56rem;
 }
 //Right Side
 .img-gamification-container.ariane {
-  flex: 1 1 40%;
-  @include flex(row, center, center);
+  @include flex(row, flex-start, center);
   img {
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
   }
 }

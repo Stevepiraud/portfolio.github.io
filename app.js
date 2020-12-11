@@ -291,7 +291,6 @@ barba.init({
 
         //Linking the contact button to the contact form
         $(".contact-me-popup-btn.project").click(() => {
-          const navbarHeight = $("#header-fix-space").outerHeight();
           window.location.href = "/en/story/index.html#form-section-english";
         });
 
@@ -1177,6 +1176,13 @@ barba.init({
         $(linkFr).removeClass("active-language");
         $(linkFrMobile).removeClass("active-language");
       },
+      afterEnter() {
+        //Link To client's review
+        $("#link-customer-review-en").click(() => {
+          window.location.href =
+            "/en/portfolio/thesliderz.html#client-review-en";
+        });
+      },
     },
 
     /*PROJECT PAGE - STORY - FRENCH*/
@@ -1222,6 +1228,13 @@ barba.init({
         $(linkEnMobile).removeClass("active-language");
         $(linkFr).addClass("active-language");
         $(linkFrMobile).addClass("active-language");
+      },
+      afterEnter() {
+        //Link To client's review
+        $("#link-customer-review-fr").click(() => {
+          window.location.href =
+            "/fr/portfolio/thesliderz.html#client-review-fr";
+        });
       },
     },
   ],

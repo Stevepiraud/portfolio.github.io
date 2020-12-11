@@ -49,6 +49,11 @@
     display: none;
   }
 
+  //TheSliderz
+  .project-story-description-container.functions.thesliderz.mobile {
+    display: none;
+  }
+
   //Orphée
   .project-story-description-container.mythology.orphee.mobile,
   .project-story-description-container.imagine.orphee.mobile,
@@ -74,13 +79,6 @@
   .project-story-description-container.uxdesign.ariane.mobile,
   .project-story-description-container.social.ariane.mobile,
   .project-story-description-container.gamification.ariane.mobile {
-    display: none;
-  }
-
-  //Site Mapping
-  .project-story-button.thesliderz-site-mapping.desktop,
-  .project-story-button.orphee-site-mapping.desktop,
-  .project-story-button.wonderfood-site-mapping.desktop {
     display: none;
   }
 
@@ -116,11 +114,7 @@
   }
 
   //Card Transitions
-  .project-story-card-transitions-container {
-    height: 40rem;
-  }
   .project-story-card-transitions {
-    height: 40rem;
     svg {
       width: 30%;
     }
@@ -378,6 +372,10 @@
   .project-story-description-container.social.ariane.desktop,
   .project-story-description-container.gamification.ariane.desktop {
     display: none;
+  }
+
+  .project-story-card-transitions {
+    @include flex(column, center, center);
   }
 
   #btn-scroll-to-top {

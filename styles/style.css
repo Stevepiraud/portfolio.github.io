@@ -1120,28 +1120,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 90vh;
+  min-height: auto;
+  margin-top: 8rem;
 }
 
 .project-story-card-transitions {
-  width: 60%;
+  width: 40%;
   margin: 0 auto 0 auto;
-  height: 80vh;
   border-radius: 10px;
   background: #333333;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
 }
 
 .project-story-card-transitions h2 {
@@ -1167,7 +1169,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 90vh;
+  min-height: 80vh;
   width: 90%;
   margin: 0 auto;
 }
@@ -1209,9 +1211,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 90vh;
+  min-height: auto;
   width: 90%;
-  margin: 0 auto;
+  margin: 4rem auto 0rem auto;
 }
 
 .project-story-description-container h2 {
@@ -1223,7 +1225,8 @@ body {
 }
 
 .project-story {
-  padding: 2.4rem;
+  padding: 0rem 2.4rem;
+  margin-top: 2rem;
 }
 
 .project-story h2 {
@@ -1687,7 +1690,7 @@ body {
 }
 
 .img-logo-conception-container.orphee img {
-  width: 60%;
+  width: 40%;
 }
 
 .project-story-description-container.lofi-mockups.orphee,
@@ -1766,8 +1769,7 @@ body {
 }
 
 .img-user-container.persona-wonderfood img {
-  width: 90%;
-  height: 90%;
+  width: 80%;
   border-radius: 10px;
   border: 2px solid #2eb2ff;
 }
@@ -1850,9 +1852,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  max-width: 56rem;
 }
 
 .img-functions-container.wonderfood {
@@ -1869,20 +1869,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  width: 20rem;
 }
 
 .img-functions-container.wonderfood svg {
-  width: 50%;
-  height: 50%;
+  width: 100%;
 }
 
 .img-moodboard-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1896,6 +1890,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 124rem;
 }
 
 .img-moodboard-container img {
@@ -1905,9 +1900,7 @@ body {
 }
 
 .project-story.moodboard.wonderfood {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+  max-width: 56rem;
 }
 
 .project-story-description-container.logo-conception.wonderfood {
@@ -1927,6 +1920,7 @@ body {
 
 .img-logo-conception-container.wonderfood {
   width: 25%;
+  margin: 2rem 0rem;
 }
 
 .img-logo-conception-container.wonderfood img {
@@ -2045,7 +2039,6 @@ body {
 }
 
 .project-story.interest {
-  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2059,6 +2052,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
 
 .interest-list-container {
@@ -2075,10 +2069,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2rem;
 }
 
 .interest-list-container svg {
-  width: 15%;
+  width: 10%;
   margin: 0rem 4rem;
 }
 
@@ -2093,11 +2088,7 @@ body {
 }
 
 .project-story.uxdesign.ariane {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  min-height: 90vh;
-  max-width: 48rem;
+  max-width: 56rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2114,9 +2105,7 @@ body {
 }
 
 .img-uxdesign-container.ariane {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+  width: 32rem;
 }
 
 .img-uxdesign-container.ariane img {
@@ -2125,9 +2114,6 @@ body {
 }
 
 .img-social-container.ariane {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2135,24 +2121,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .img-social-container.ariane img {
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
 }
 
 .project-story.social.ariane {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2166,13 +2148,10 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 56rem;
 }
 
 .project-story.gamification.ariane {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2186,12 +2165,10 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 56rem;
 }
 
 .img-gamification-container.ariane {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2199,16 +2176,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .img-gamification-container.ariane img {
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
 }
 
@@ -2387,6 +2364,10 @@ body {
           align-items: center;
 }
 
+.project-story.client-requirement-content.thesliderz {
+  margin: 0;
+}
+
 .project-story-description-container.functions.thesliderz {
   position: relative;
 }
@@ -2468,6 +2449,11 @@ body {
 .project-story-description-container.review.thesliderz img {
   width: 60%;
   border-radius: 10px;
+}
+
+.customer-review-link {
+  cursor: pointer;
+  color: #2eb2ff;
 }
 
 .about-me-container {
@@ -2555,6 +2541,8 @@ body {
   padding: 2.4rem;
   background: #333333;
   border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
 }
 
 .about-me-profile-text p:not(:first-child) {
@@ -2597,6 +2585,8 @@ body {
       -ms-flex: 1 1 60%;
           flex: 1 1 60%;
   position: relative;
+  -webkit-box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
 }
 
 .part-text.one:after {
@@ -2643,6 +2633,8 @@ body {
 
 .part-text.two {
   width: 50%;
+  -webkit-box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
 }
 
 .part-text.two p:nth-child(3) {
@@ -2650,6 +2642,8 @@ body {
 }
 
 .part-text.purpose {
+  -webkit-box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
   margin: 0rem 2.4rem;
   position: relative;
 }
@@ -2691,6 +2685,8 @@ body {
 .iae-degree,
 .kedge-degree {
   position: relative;
+  -webkit-box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -2767,6 +2763,8 @@ body {
 .part-text.experience {
   margin-left: 2.4rem;
   width: 60%;
+  -webkit-box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
 }
 
 .skills-tool-container {
@@ -3108,6 +3106,8 @@ form label {
           align-items: center;
   width: 100%;
   border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.1);
   background: #333333;
   padding: 3.2rem 2.4rem;
 }
@@ -3224,6 +3224,9 @@ footer p {
   .main-head {
     display: none;
   }
+  .project-story-description-container.functions.thesliderz.mobile {
+    display: none;
+  }
   .project-story-description-container.mythology.orphee.mobile,
   .project-story-description-container.imagine.orphee.mobile,
   .project-story-description-container.problem.orphee.mobile,
@@ -3246,11 +3249,6 @@ footer p {
   .project-story-description-container.gamification.ariane.mobile {
     display: none;
   }
-  .project-story-button.thesliderz-site-mapping.desktop,
-  .project-story-button.orphee-site-mapping.desktop,
-  .project-story-button.wonderfood-site-mapping.desktop {
-    display: none;
-  }
   body.hide-overflowing-content {
     overflow: hidden;
   }
@@ -3270,12 +3268,6 @@ footer p {
   }
   .img-hero-container.thesliderz svg {
     width: 30%;
-  }
-  .project-story-card-transitions-container {
-    height: 40rem;
-  }
-  .project-story-card-transitions {
-    height: 40rem;
   }
   .project-story-card-transitions svg {
     width: 30%;
@@ -3537,6 +3529,21 @@ footer p {
   .project-story-description-container.social.ariane.desktop,
   .project-story-description-container.gamification.ariane.desktop {
     display: none;
+  }
+  .project-story-card-transitions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #btn-scroll-to-top {
     right: 3.2rem;
