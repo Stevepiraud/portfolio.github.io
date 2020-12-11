@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!--GENERAL-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+
+    <!--DESCRIPTION-->
+    <meta
+      name="description"
+      content="Steve Piraud est un UX/UI Designer passionné et spécialisé dans le design visuel, confortable avec les langages HTML / CSS, et qui aime aider les personnes et travailler en équipe"
+    />
+    <link rel="icon" href="/icon/rocket.svg" />
+    <title>Steve Piraud | UX-UI Designer</title>
+
+    <!--FONTS-->
+    <!--Font Families Title-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Families Body-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--STYLE-->
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body data-barba="wrapper">
+    <header class="main-head">
+      <nav class="top-nav">
+        <div class="logo-links-wrapper">
+          <div class="logo-container">
+            <!--<img src="" alt="logo" />-->
+            <h1>
+              <a id="logo" href="/fr/index.html">
+                <span
+                  class="ghost-cursor-animation"
+                  style="color: rgb(0, 140, 255)"
+                  >a</span
+                ><span class="ghost-cursor-animation" style="color: white"
+                  >Frenchy</span
+                ><span
+                  class="ghost-cursor-animation"
+                  style="color: rgb(252, 88, 66)"
+                  >Designer</span
+                >
+              </a>
+            </h1>
+          </div>
+          <ul class="nav-links">
+            <!--<li class="link-container"><a id="link-templates">Templates</a></li>-->
+            <li class="link-container">
+              <a id="link-home" href="/fr/index.html">Accueil</a>
+            </li>
+            <li class="link-container">
+              <a id="link-portfolio" href="/fr/portfolio/index.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="link-container">
+              <a id="link-story" href="/fr/story/index.html">A propos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-networks-container">
+          <a
+            class="icon linkedin"
+            href="https://www.linkedin.com/in/steve-piraud/"
+            target="blank"
+            aria-label="linkedin social network profile"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 333333 333333"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M166667 0c46023 0 87690 18655 117851 48816s48816 71828 48816 117851-18655 87690-48816 117851-71828 48816-117851 48816-87690-18655-117851-48816S0 212690 0 166667 18655 78977 48816 48816 120644 0 166667 0zm-18386 141742h26667v13671l386 1c3714-6663 12794-13671 26335-13671 28159-1 33367 17523 33367 40319v46437l-27811 1v-41165c0-9813-204-22446-14460-22446-14481 0-16699 10682-16699 21731v41880h-27786v-86757zm-19280-24100c0 7983-6478 14461-14461 14461-7982 0-14463-6478-14463-14461s6480-14460 14463-14460 14461 6478 14461 14460zm-28924 24100h28924v86757h-28924v-86757zm173218-81703c-27287-27287-64987-44165-106628-44165-41642 0-79341 16878-106628 44165s-44165 64987-44165 106628c0 41642 16878 79341 44165 106628s64987 44165 106628 44165c41642 0 79341-16878 106628-44165s44165-64987 44165-106628c0-41642-16878-79341-44165-106628z"
+                fill="#0077b5"
+                fill-rule="nonzero"
+              /></svg
+          ></a>
+          <a
+            class="icon dribbble"
+            href="https://dribbble.com/stevepiraud"
+            target="blank"
+            aria-label="dribble social network profile"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 333333 333333"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M166667 0c46023 0 87690 18655 117851 48816s48816 71828 48816 117851-18655 87690-48816 117851-71828 48816-117851 48816-87690-18655-117851-48816S0 212690 0 166667 18655 78977 48816 48816 120644 0 166667 0zm0 250565c-46267 0-83898-37625-83898-83898 0-46272 37618-83898 83898-83898 46267 0 83898 37618 83898 83898s-37625 83898-83898 83898zm70755-72422c-2452-787-22193-6649-44635-3053 9373 25755 13173 46731 13929 51094 16056-10875 27529-28087 30707-48042h-1zm-42765 54595c-1081-6296-5211-28189-15267-54334-168 66-325 96-461 167-40436 14093-54962 42118-56232 44737 12157 9469 27436 15145 43985 15145 9933 0 19404-2034 27990-5704l-16-11h1zm-81247-18060c1638-2790 21302-35330 58236-47285 922-291 1867-586 2821-848-1803-4069-3766-8156-5800-12155-35751 10718-70493 10256-73639 10225-33 726-33 1447-33 2193 0 18382 6986 35193 18415 47883v-13zm-16873-62596c3211 31 32741 164 66268-8717-11857-21109-24676-38863-26575-41455-20060 9466-35070 27959-39683 50172h-10zm53353-54983c1970 2650 15006 20388 26743 41947 25496-9534 36274-24061 37557-25894-12650-11241-29301-18059-47519-18059-5766 31-11411 724-16777 2001l-3 6h-1zm72267 24379c-1511 2031-13542 17440-40021 28254 1666 3406 3279 6881 4751 10393 523 1248 1049 2452 1541 3700 23857-2976 47549 1806 49912 2295-168-16905-6231-32446-16193-44635l9-6 1-1zm51139-61439c-27287-27287-64987-44165-106628-44165-41642 0-79341 16878-106628 44165s-44165 64987-44165 106628c0 41642 16878 79341 44165 106628s64987 44165 106628 44165c41642 0 79341-16878 106628-44165s44165-64987 44165-106628c0-41642-16878-79341-44165-106628z"
+                fill="#ea4c89"
+                fill-rule="nonzero"
+              /></svg
+          ></a>
+          <a
+            class="icon instagram"
+            href="https://www.instagram.com/afrenchydesigner/"
+            target="blank"
+            aria-label="instagram social network profile"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 333333 333333"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+              image-rendering="optimizeQuality"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <defs>
+                <linearGradient
+                  id="a"
+                  gradientUnits="userSpaceOnUse"
+                  x1="126963"
+                  y1="323675"
+                  x2="206370"
+                  y2="9655.51"
+                >
+                  <stop offset="0" stop-color="#f58529" />
+                  <stop offset=".129" stop-color="#feda77" />
+                  <stop offset=".431" stop-color="#dd2a7b" />
+                  <stop offset=".741" stop-color="#8134af" />
+                  <stop offset="1" stop-color="#515bd4" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M129816 80249h73706c27678 0 50313 22355 50313 49665v73506c0 27317-22635 49663-50313 49663h-73706c-27680 0-50317-22348-50317-49663v-73508c0-27308 22638-49663 50317-49663zM166667 0c46024 0 87691 18656 117851 48816 30159 30160 48816 71827 48816 117851 0 46020-18656 87689-48816 117849-30161 30159-71830 48816-117851 48816-46020 0-87689-18657-117851-48816C18657 254356 0 212687 0 166667S18656 78978 48816 48816C78977 18657 120646 0 166667 0zm104924 61742c-26849-26849-63948-43459-104924-43459-40974 0-78074 16610-104924 43459-26849 26850-43459 63950-43459 104924 0 40976 16610 78074 43459 104923 26850 26849 63950 43459 104924 43459s78074-16610 104924-43459c26849-26849 43459-63947 43459-104923s-16610-78076-43459-104924zm-105394 58260c26896 0 48723 21826 48723 48724 0 26900-21827 48723-48723 48723-26904 0-48727-21823-48727-48723 0-26898 21823-48724 48727-48724zm0 16457c17811 0 32267 14453 32267 32267 0 17815-14456 32271-32267 32271-17817 0-32270-14456-32270-32271 0-17814 14453-32267 32270-32267zm47139-23209c4368 0 7911 3542 7911 7908 0 4369-3543 7911-7911 7911-4367 0-7908-3542-7908-7911 0-4367 3542-7908 7908-7908zm-77498-18883h61667c23156 0 42094 18843 42094 41872v61975c0 23027-18937 41867-42094 41867l-61667 2c-23154 0-42095-18841-42095-41867v-61978c0-23027 18941-41870 42095-41870z"
+                fill="url(#a)"
+              /></svg
+          ></a>
+        </div>
+
+        <div class="language-container">
+          <a
+            href="/en/portfolio/index.html"
+            id="language-en"
+            class="language eng"
+            >En</a
+          >
+          <a
+            href="/fr/portfolio/index.html"
+            id="language-fr"
+            class="language fr"
+            >Fr</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <header class="main-head-mobile">
+      <div class="top-nav-mobile">
+        <h1>
+          <a id="logo-mobile" href="/fr/index.html">
+            <span class="ghost-cursor-animation" style="color: rgb(0, 140, 255)"
+              >a</span
+            ><span
+              class="ghost-cursor-animation"
+              id="logo-color"
+              style="color: white"
+              >Frenchy</span
+            ><span
+              class="ghost-cursor-animation"
+              style="color: rgb(252, 88, 66)"
+              >Designer</span
+            >
+          </a>
+        </h1>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+      </div>
+    </header>
+    <!--header spacer to fix the emptiness left by our beloved header-->
+    <div id="header-fix-space"></div>
+
+    <main data-barba="container" data-barba-namespace="portfolio-fr">
+      <section class="project-overview-main-container thesliderz">
+        <div class="project-overview-container thesliderz">
+          <div class="project-img-container thesliderz">
+            <img
+              src="/img/thesliderz.png"
+              alt="the sliderz image presentation"
+              class="thesliderz"
+            />
+          </div>
+
+          <div class="project-description-wrapper">
+            <h1>The Sliderz</h1>
+            <p class="project-description-text">
+              Ce projet est une application mobile basée sur des interactions
+              sociales que j'ai conçue pour un client. Son but est de mettre en
+              relation les voyageurs de façon unique à travers une interface
+              simple mais efficace.
+            </p>
+
+            <div class="tool-container">
+              <p>Outils utilisés pour le projet:</p>
+              <div class="tools">
+                <a
+                  href="https://whimsical.com/a"
+                  target="blank"
+                  aria-label="link to whimsical website"
+                >
+                  <img
+                    src="/icon/whimsical.png"
+                    alt="whimsical icon"
+                    class="tool whimsical"
+                /></a>
+                <a
+                  href="https://balsamiq.com/"
+                  target="blank"
+                  aria-label="link to balsamiq website"
+                >
+                  <img
+                    src="/icon/balsamiq.png"
+                    alt="balsamiq icon"
+                    class="tool balsamiq"
+                /></a>
+                <a
+                  href="https://www.figma.com"
+                  target="blank"
+                  aria-label="link to figma website"
+                >
+                  <img
+                    src="/icon/figma.svg"
+                    alt="figma icon"
+                    class="tool figma"
+                /></a>
+              </div>
+            </div>
+            <a class="viewProject-button" href="/fr/portfolio/thesliderz.html"
+              >Découvrir le Projet</a
+            >
+          </div>
+
+          <!--Scroll Arrow Down-->
+          <div class="scroll-img-container thesliderz" id="scrollDown1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:svgjs="http://svgjs.com/svgjs"
+              version="1.1"
+              width="512"
+              height="512"
+              x="0"
+              y="0"
+              viewBox="0 0 451.847 451.847"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <path
+                d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"
+                data-original="#000000"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-overview-main-container orphee">
+        <div class="project-overview-container orphee">
+          <div class="project-img-container orphee">
+            <img src="/img/orphee.png" alt="" class="orphee" />
+          </div>
+
+          <div class="project-description-wrapper">
+            <h1>Orphee</h1>
+            <p class="project-description-text">
+              Oprhée est un projet personnel que j'ai conçu pour les producteurs
+              de musique. Cette application permet de transférer et convertir la
+              musique créée sur leurs téléphones vers le logiciel de leurs
+              ordinateurs.
+            </p>
+
+            <div class="tool-container">
+              <p>Outils utilisés pour le projet:</p>
+              <div class="tools">
+                <a
+                  href="https://balsamiq.com/"
+                  target="blank"
+                  aria-label="link to balsamiq website"
+                >
+                  <img
+                    src="/icon/balsamiq.png"
+                    alt="balsamiq icon"
+                    class="tool balsamiq"
+                /></a>
+                <a
+                  href="https://www.figma.com"
+                  target="blank"
+                  aria-label="link to figma website"
+                >
+                  <img
+                    src="/icon/figma.svg"
+                    alt="figma icon"
+                    class="tool figma"
+                /></a>
+                <a
+                  href="https://principleformac.com/"
+                  target="blank"
+                  aria-label="link to principle website"
+                >
+                  <img
+                    src="/icon/principle.png"
+                    alt="principle icon"
+                    class="tool principle"
+                /></a>
+              </div>
+            </div>
+            <a class="viewProject-button" href="/fr/portfolio/orphee.html"
+              >Découvrir le Projet</a
+            >
+          </div>
+
+          <!--Scroll Arrow Down-->
+          <div class="scroll-img-container orphee" id="scrollDown2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:svgjs="http://svgjs.com/svgjs"
+              version="1.1"
+              width="512"
+              height="512"
+              x="0"
+              y="0"
+              viewBox="0 0 451.847 451.847"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <path
+                d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"
+                data-original="#000000"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-overview-main-container wonderfood">
+        <div class="project-overview-container wonderfood">
+          <div class="project-img-container wonderfood">
+            <img
+              src="/img/wonderfood.png"
+              alt="wonderfood image presentation"
+              class="wonderfood"
+            />
+          </div>
+
+          <div class="project-description-wrapper">
+            <h1>Wonderfood</h1>
+            <p class="project-description-text">
+              Wonderfood est un projet de site internet réalisé pendant mes
+              études. Il permet à l'utilisateur de commander en ligne de la
+              nourriture qui sera livré à sa localisation exacte.
+            </p>
+
+            <div class="tool-container">
+              <p>Outils utilisés pour le projet:</p>
+              <div class="tools">
+                <a
+                  href="https://balsamiq.com/"
+                  target="blank"
+                  aria-label="link to balsamiq website"
+                >
+                  <img
+                    src="/icon/balsamiq.png"
+                    alt="balsamiq icon"
+                    class="tool balsamiq"
+                /></a>
+                <a
+                  href="https://www.sketch.com/"
+                  target="blank"
+                  aria-label="link to sketch website"
+                >
+                  <img
+                    src="/icon/sketch.png"
+                    alt="sketch icon"
+                    class="tool sketch"
+                /></a>
+                <a
+                  href="https://www.adobe.com/products/photoshop.html"
+                  target="blank"
+                  aria-label="link to adobe photoshop website"
+                >
+                  <img
+                    src="/icon/photoshop.png"
+                    alt="adobe photoshop icon"
+                    class="tool photoshop"
+                /></a>
+              </div>
+            </div>
+            <a class="viewProject-button" href="/fr/portfolio/wonderfood.html"
+              >Découvrir le Projet</a
+            >
+          </div>
+
+          <!--Scroll Arrow Down-->
+          <div class="scroll-img-container wonderfood" id="scrollDown3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:svgjs="http://svgjs.com/svgjs"
+              version="1.1"
+              width="512"
+              height="512"
+              x="0"
+              y="0"
+              viewBox="0 0 451.847 451.847"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <path
+                d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"
+                data-original="#000000"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-overview-main-container ariane">
+        <div class="project-overview-container ariane">
+          <div class="project-img-container ariane">
+            <img src="/img/ariane.png" alt="" class="ariane" />
+          </div>
+
+          <div class="project-description-wrapper">
+            <h1>Ariane</h1>
+            <p class="project-description-text">
+              Ariane est un projet de recherche réalisé en groupe, qui permet de
+              géolocaliser les citoyens français et de les prévenir de risques
+              éventuels dans leur pays d'accueil.
+            </p>
+
+            <div class="tool-container">
+              <p>Outils utilisés pour le projet:</p>
+              <div class="tools">
+                <a
+                  href="https://www.figma.com"
+                  target="blank"
+                  aria-label="link to figma website"
+                >
+                  <img
+                    src="/icon/figma.svg"
+                    alt="figma icon"
+                    class="tool figma"
+                /></a>
+              </div>
+            </div>
+            <a class="viewProject-button" href="/fr/portfolio/ariane.html"
+              >Découvrir le Projet</a
+            >
+          </div>
+
+          <!--Scroll Arrow Top
+          <div class="scroll-img-container" id="scrollTop3">
+            <img src="../icon/arrow-down-sign.svg" alt="down arrow icon" />
+          </div>-->
+        </div>
+      </section>
+    </main>
+
+    <!--Nav Bar for Mobile-->
+    <nav class="nav-bar-mobile">
+      <ul class="nav-links-mobile">
+        <li class="link-container-mobile">
+          <a id="link-home-mobile" href="/fr/index.html">Acceuil</a>
+        </li>
+        <li class="link-container-mobile">
+          <a id="link-portfolio-mobile" href="/fr/portfolio/index.html"
+            >Portfolio</a
+          >
+        </li>
+        <li class="link-container-mobile">
+          <a id="link-story-mobile" href="/fr/story/index.html">A propos</a>
+        </li>
+      </ul>
+
+      <div class="social-networks-container-mobile">
+        <a
+          class="icon linkedin"
+          href="https://www.linkedin.com/in/steve-piraud/"
+          target="blank"
+          aria-label="linkedin social network profile"
+        >
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512.002 512.002"
+            style="enable-background: new 0 0 512.002 512.002"
+            xml:space="preserve"
+          >
+            <circle style="fill: #4376b1" cx="256.001" cy="256" r="256" />
+            <path
+              style="fill: #336699"
+              d="M511.016,233.634L394.729,117.198c-71.035,9.237-145.27,7.859-216.305,9.511
+   c-29.306,0-58.613,13.791-53.441,46.545c10.343,65.508,15.515,129.293,3.448,196.525c-1.9,8.545-5.897,17.089-11.117,25.059
+   L233.48,511.005c7.421,0.646,14.929,0.996,22.519,0.996c141.384,0,256-114.616,256-256
+   C512.001,248.461,511.656,241.005,511.016,233.634z"
+            />
+            <path
+              style="fill: #ffffff"
+              d="M376.023,109.468H135.979c-14.643,0-26.51,11.867-26.51,26.51V376.02
+   c0,14.639,11.867,26.51,26.51,26.51h240.042c14.639,0,26.51-11.871,26.51-26.51V135.978
+   C402.533,121.335,390.662,109.468,376.023,109.468L376.023,109.468z M200.155,362.517c0,4.263-3.453,7.716-7.716,7.716h-32.837
+   c-4.263,0-7.716-3.455-7.716-7.716V224.856c0-4.263,3.455-7.716,7.716-7.716h32.839c4.263,0,7.716,3.455,7.716,7.716v137.661
+   H200.155z M176.02,204.162c-17.23,0-31.196-13.969-31.196-31.201c0-17.229,13.965-31.196,31.196-31.196
+   c17.232,0,31.198,13.969,31.198,31.196C207.218,190.195,193.251,204.162,176.02,204.162L176.02,204.162z M371.773,363.139
+   c0,3.918-3.175,7.096-7.09,7.096h-35.242c-3.915,0-7.092-3.177-7.092-7.096v-64.574c0-9.63,2.826-42.21-25.172-42.21
+   c-21.719,0-26.124,22.3-27.008,32.304v74.478c0,3.918-3.175,7.096-7.094,7.096h-34.082c-3.918,0-7.096-3.177-7.096-7.096V224.234
+   c0-3.918,3.177-7.096,7.096-7.096h34.082c3.918,0,7.094,3.177,7.094,7.096v12.009c8.054-12.085,20.023-21.416,45.502-21.416
+   c56.425,0,56.105,52.717,56.105,81.686v66.627H371.773z"
+            />
+            <path
+              style="fill: #d1d1d1"
+              d="M376.023,109.468H255.427v107.67h7.647c3.918,0,7.094,3.177,7.094,7.096v12.009
+   c8.054-12.085,20.023-21.416,45.503-21.416c56.425,0,56.105,52.717,56.105,81.686v66.625c0,3.918-3.175,7.096-7.09,7.096h-35.242
+   c-3.915,0-7.092-3.177-7.092-7.096v-64.574c0-9.63,2.826-42.21-25.172-42.21c-21.719,0-26.124,22.3-27.008,32.304v74.478
+   c0,3.918-3.175,7.096-7.094,7.096h-7.647v32.301h120.596c14.639,0,26.51-11.871,26.51-26.51V135.978
+   C402.533,121.335,390.662,109.468,376.023,109.468z"
+            /></svg
+        ></a>
+        <a
+          class="icon dribbble"
+          href="https://dribbble.com/stevepiraud"
+          target="blank"
+          aria-label="dribble social network profile"
+        >
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512 512"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+          >
+            <circle style="fill: #dc4373" cx="256" cy="256" r="256" />
+            <path
+              style="fill: #c13366"
+              d="M358.334,151.376c-6.666,2.577-14.305,1.838-17.863-0.534
+     c-43.098-24.135-89.643-31.03-132.741-18.963c-61.693,18.227-86.893,86.635-86.73,150.494
+     c11.311,21.068,26.279,52.617,30.927,76.552l149.12,149.123C406.313,489.36,489.339,406.344,508.04,301.084L358.334,151.376z"
+            />
+            <path
+              style="fill: #f0f1f1"
+              d="M255.997,109.654c-80.796,0-146.529,65.655-146.529,146.348s65.733,146.342,146.529,146.342
+     c80.799,0,146.535-65.646,146.535-146.342C402.532,175.309,336.796,109.654,255.997,109.654L255.997,109.654z M352.418,178.728
+     c16.715,20.716,26.872,46.878,27.341,75.386c-5.561-1.141-29.115-5.534-57.263-5.534c-9.082,0-18.641,0.455-28.224,1.639
+     c-0.809-1.967-1.619-3.927-2.469-5.906c-2.486-5.846-5.163-11.645-7.937-17.36C327.187,209.105,348.084,184.334,352.418,178.728
+     L352.418,178.728z M255.997,132.563c31.223,0,59.764,11.6,81.563,30.706c-3.451,4.708-22.166,28.101-63.938,43.884
+     c-19.335-35.344-40.498-64.61-45.535-71.406C237.063,133.668,246.405,132.563,255.997,132.563L255.997,132.563z M202.821,144.558
+     c4.268,5.879,25.464,35.459,45.296,70.518c-53.224,13.991-100.488,14.903-111.895,14.903h-1.212
+     C143.205,192.212,168.722,160.83,202.821,144.558L202.821,144.558z M132.201,256.195c0-1.019,0.017-2.038,0.05-3.051
+     c0.74,0.009,1.833,0.009,3.25,0.009c15.363,0,68.691-1.269,123.644-17.577c3.336,6.523,6.511,13.145,9.464,19.763
+     c-1.388,0.398-2.757,0.796-4.117,1.241c-61.874,19.983-95.884,72.888-101.117,81.536
+     C143.986,316.268,132.201,287.587,132.201,256.195L132.201,256.195z M255.997,379.818c-28.393,0-54.596-9.616-75.505-25.74
+     c3.537-6.934,29.206-53.15,97.013-76.75c0.041-0.017,0.086-0.033,0.136-0.045c17.003,44.265,24.204,81.417,26.179,92.931
+     C289.104,376.401,272.944,379.818,255.997,379.818L255.997,379.818z M326.115,358.026c-1.66-9.526-8.33-44.344-23.726-86.809
+     c8.635-1.343,17.036-1.874,24.914-1.874c25.874,0,46.115,5.665,50.817,7.102C372.529,310.167,353.223,339.349,326.115,358.026
+     L326.115,358.026z"
+            />
+            <path
+              style="fill: #d1d1d1"
+              d="M255.997,109.654c-0.191,0-0.379,0.014-0.571,0.014v22.902c0.19,0,0.379-0.009,0.571-0.009
+     c31.223,0,59.764,11.6,81.563,30.706c-3.451,4.708-22.166,28.101-63.938,43.884c-6.07-11.097-12.321-21.594-18.196-30.984v60.478
+     c1.238-0.353,2.477-0.705,3.717-1.072c3.336,6.523,6.511,13.145,9.464,19.763c-1.388,0.398-2.757,0.796-4.117,1.239
+     c-3.098,1.002-6.106,2.105-9.064,3.26v26.614c6.811-3.281,14.145-6.359,22.078-9.121c0.041-0.017,0.086-0.033,0.136-0.045
+     c17.003,44.265,24.204,81.417,26.179,92.931c-14.714,6.187-30.873,9.604-47.823,9.604c-0.191,0-0.379-0.012-0.571-0.012v22.525
+     c0.191,0,0.379,0.014,0.571,0.014c80.799,0,146.535-65.646,146.535-146.342C402.532,175.309,336.796,109.654,255.997,109.654z
+      M291.804,244.312c-2.486-5.846-5.163-11.645-7.937-17.36c43.32-17.848,64.217-42.618,68.551-48.225
+     c16.715,20.716,26.874,46.878,27.341,75.385c-5.561-1.141-29.115-5.534-57.261-5.534c-9.082,0-18.641,0.457-28.224,1.639
+     C293.462,248.251,292.654,246.291,291.804,244.312z M326.115,358.026c-1.66-9.526-8.33-44.344-23.726-86.809
+     c8.635-1.343,17.036-1.874,24.914-1.874c25.874,0,46.115,5.665,50.817,7.102C372.529,310.167,353.223,339.349,326.115,358.026z"
+            /></svg
+        ></a>
+        <a
+          class="icon instagram"
+          href="https://www.instagram.com/afrenchydesigner/"
+          target="blank"
+          aria-label="instagram social network profile"
+        >
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512 512"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+          >
+            <circle style="fill: #6c27b3" cx="256" cy="256" r="256" />
+            <path
+              style="fill: #501a96"
+              d="M374.71,132.922c-30.587,3.872-62.479,3.737-94.575,0.681
+   c-44.822-3.448-110.33-24.135-134.465,17.239c-38.772,66.236-19.649,151.035-10.614,226.078l134.737,134.708
+   c130.388-6.923,234.886-111.407,241.831-241.79L374.71,132.922z"
+            />
+            <g>
+              <path
+                style="fill: #ffffff"
+                d="M315.227,109.468H196.772c-48.14,0-87.304,39.164-87.304,87.304v118.455
+     c0,48.138,39.164,87.305,87.305,87.305h118.455c48.138,0,87.305-39.165,87.305-87.305V196.772
+     C402.532,148.632,363.367,109.468,315.227,109.468L315.227,109.468z M373.05,315.228c0,31.934-25.888,57.822-57.822,57.822H196.773
+     c-31.934,0-57.822-25.888-57.822-57.822V196.773c0-31.934,25.888-57.823,57.822-57.823h118.455
+     c31.934,0,57.822,25.89,57.822,57.823V315.228z"
+              />
+              <path
+                style="fill: #ffffff"
+                d="M256,180.202c-41.794,0-75.798,34.004-75.798,75.798c0,41.791,34.004,75.795,75.798,75.795
+     s75.795-34.001,75.795-75.795S297.794,180.202,256,180.202L256,180.202z M256,302.313c-25.579,0-46.316-20.733-46.316-46.313
+     s20.737-46.316,46.316-46.316s46.313,20.735,46.313,46.316C302.313,281.579,281.579,302.313,256,302.313L256,302.313z"
+              />
+            </g>
+            <g>
+              <path
+                style="fill: #d1d1d1"
+                d="M350.103,180.774c0,10.03-8.132,18.163-18.163,18.163c-10.03,0-18.163-8.133-18.163-18.163
+     c0-10.031,8.133-18.163,18.163-18.163C341.973,162.611,350.103,170.741,350.103,180.774L350.103,180.774z"
+              />
+              <path
+                style="fill: #d1d1d1"
+                d="M315.228,109.468h-59.802v29.482h59.802c31.934,0,57.822,25.89,57.822,57.823v118.455
+     c0,31.934-25.888,57.822-57.822,57.822h-59.802v29.482h59.802c48.138,0,87.304-39.165,87.304-87.305V196.772
+     C402.532,148.632,363.367,109.468,315.228,109.468z"
+              />
+              <path
+                style="fill: #d1d1d1"
+                d="M256,180.202c-0.193,0-0.381,0.014-0.574,0.014v29.482c0.191-0.002,0.381-0.014,0.574-0.014
+     c25.579,0,46.313,20.735,46.313,46.316c0,25.579-20.733,46.313-46.313,46.313c-0.193,0-0.383-0.012-0.574-0.014v29.482
+     c0.193,0.002,0.381,0.014,0.574,0.014c41.794,0,75.795-34.002,75.795-75.795C331.795,214.206,297.794,180.202,256,180.202z"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <div class="language-container">
+        <a
+          href="/en/portfolio/index.html"
+          id="language-en-mobile"
+          class="language eng mobile"
+          >En</a
+        >
+        <a
+          href="/fr/portfolio/index.html"
+          id="language-fr-mobile"
+          class="language fr mobile"
+          >Fr</a
+        >
+      </div>
+    </nav>
+
+    <!--Scroll to top btn-->
+    <button id="btn-scroll-to-top">
+      <i class="fas fa-arrow-circle-up"></i>
+    </button>
+
+    <!--Cursor-->
+    <div class="cursor-ghost">
+      <img src="/icon/ghost.svg" alt="ghost image cursor" />
+    </div>
+    <div class="cursor-rocket">
+      <img src="/icon/rocket.svg" alt="rocket image cursor" />
+    </div>
+
+    <!--THIRD PARTY LINKS-->
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!--BARBA-->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <!--JQUERY-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!--JS FILE-->
+    <script src="/app.js"></script>
+  </body>
+</html>

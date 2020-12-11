@@ -1,0 +1,113 @@
+//SECTION STORY - Hero
+//Left Side
+.img-hero-container.left.ariane {
+  @include flex(row, center, center);
+  img {
+    width: 50%;
+    border-radius: 10px;
+  }
+}
+
+//SECTION STORY - what's ariane
+//Left Side
+.project-story.intro.ariane {
+  flex: 1 1 60%;
+}
+//Right Side
+.img-intro-container.ariane {
+  flex: 1 1 40%;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+//SECTION STORY - How to improve it
+//Left Side
+.project-story.solution.ariane {
+  flex: 1 1 60%;
+}
+//Right Side
+.img-solution-container.ariane {
+  flex: 1 1 40%;
+  @include flex(row, center, center);
+  img {
+    width: 60%;
+    border-radius: 10px;
+  }
+}
+
+//SECTION STORY - Stakeholders interests - list
+.project-story.interest {
+  min-height: 90vh;
+  @include flex(column, space-evenly, center);
+}
+.interest-list-container {
+  @include flex(row, center, center);
+
+  svg {
+    width: 15%;
+    margin: 0rem 4rem;
+  }
+}
+.interest-list-items {
+  border-radius: 10px;
+  padding: 2.4rem;
+  background: hsl(0, 0, 20);
+
+  p:nth-child(1) {
+    padding-top: 0rem;
+  }
+}
+
+//SECTION STORY - User experience - Use cases
+//Left Side
+.project-story.uxdesign.ariane {
+  flex: 1 1 60%;
+  min-height: 90vh;
+  max-width: 48rem;
+  @include flex(column, center, flex-start);
+}
+//Right Side
+.img-uxdesign-container.ariane {
+  flex: 1 1 40%;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+//SECTION STORY - User experience - Social network function
+//Left Side
+.img-social-container.ariane {
+  flex: 1 1 40%;
+  @include flex(row, center, center);
+  img {
+    width: 50%;
+    border-radius: 10px;
+  }
+}
+//Right Side
+.project-story.social.ariane {
+  flex: 1 1 60%;
+  min-height: 90vh;
+  @include flex(column, center, flex-start);
+}
+
+//SECTION STORY - User experience - Gamification function
+//Left Side
+.project-story.gamification.ariane {
+  flex: 1 1 60%;
+  min-height: 90vh;
+  @include flex(column, center, flex-start);
+}
+//Right Side
+.img-gamification-container.ariane {
+  flex: 1 1 40%;
+  @include flex(row, center, center);
+  img {
+    width: 50%;
+    border-radius: 10px;
+  }
+}

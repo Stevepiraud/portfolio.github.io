@@ -1,0 +1,133 @@
+//SECTION STORY - Hero
+.img-hero-container.thesliderz {
+  @include flex(row, center, center);
+  svg {
+    width: 50%;
+  }
+}
+
+//SECTION STORY - Intro
+.project-story-description-container.intro.thesliderz {
+  @include flex(column, center, center);
+}
+.img-intro-container {
+  @include flex(row, center, center);
+
+  img {
+    width: 60%;
+  }
+}
+.project-story.intro-text.thesliderz {
+  max-width: 70%;
+}
+
+//SECTION STORY - solving
+.project-story-description-container.solving.thesliderz {
+  @include flex(column, center, center);
+}
+//Header
+.project-story.solving.thesliderz {
+  h2 {
+    text-align: center;
+  }
+}
+//Reasons
+.project-story.reasons-container.thesliderz {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  width: 80%;
+
+  p {
+    padding: 0;
+    padding-left: 2.4rem;
+  }
+}
+.reasons-list {
+  @include flex(row, flex-start, center);
+  padding: 1.6rem;
+
+  svg {
+    width: 20%;
+  }
+}
+
+//SECTION STORY - Design Process
+.project-story-description-container.design-process.thesliderz {
+  @include flex(column, center, center);
+
+  p {
+    padding: 0;
+    padding-left: 1.6rem;
+  }
+}
+//Content
+.design-process-item {
+  @include flex(row, flex-start, center);
+  padding: 1.6rem 0rem;
+
+  svg {
+    width: 5.6rem;
+  }
+}
+
+//SECTION STORY - Client Requirements
+.project-story-description-container.client-requirement.thesliderz {
+  @include flex(column, center, center);
+}
+
+//SECTION STORY - Main functions
+.project-story-description-container.functions.thesliderz {
+  position: relative;
+}
+//Left side
+.project-story.functions.thesliderz {
+  @include flex(column, center, flex-start);
+  flex: 1 1 50%;
+}
+//Right side
+.img-functions-container.thesliderz {
+  flex: 1 1 50%;
+  img {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+  }
+}
+
+//SECTION STORY - Low Fidelity & High Fidelity Mock Ups
+//Low fidelity and Hight fidelity gallery
+.project-story-description-container.lofi-mockups.thesliderz,
+.project-story-description-container.hifi-mockups.thesliderz {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 4rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+//SECTION STORY - Prototype
+.project-story-description-container.prototype.thesliderz {
+  @include flex(column, center, center);
+
+  iframe {
+    border: none;
+    min-width: 80%;
+    min-height: 70vh;
+  }
+}
+
+//SECTION STORY - Client Review
+.project-story-description-container.review.thesliderz {
+  img {
+    width: 60%;
+    border-radius: 10px;
+  }
+}

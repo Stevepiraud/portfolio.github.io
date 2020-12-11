@@ -1,0 +1,351 @@
+//GENERAL RULES FOR ALL PROJECTS
+
+//Section - Card Transitions
+.project-story-card-transitions-container {
+  @include flex(row, center, center);
+  min-height: 90vh;
+}
+
+.project-story-card-transitions {
+  width: 60%;
+  margin: 0 auto 0 auto;
+  height: 80vh;
+  border-radius: 10px;
+  background: $blackLightest;
+  text-align: center;
+  @include flex(column, space-around, center);
+
+  h2 {
+    color: $funColor2;
+    padding: 2.4rem;
+  }
+
+  svg {
+    width: 20%;
+  }
+}
+
+//Section Containers
+//Introduction
+.project-story-introduction-container {
+  @include flex(row, center, center);
+  min-height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img-hero-container {
+  flex: 1 1 50%;
+}
+
+.text-hero-container {
+  flex: 1 1 50%;
+
+  h1 {
+    color: white;
+    font-family: $fontFamilyTitle2;
+    font-size: calc(8rem + 1vw);
+    text-align: center;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+//Description
+.project-story-description-container {
+  @include flex(row, center, center);
+  min-height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+
+  h2 {
+    color: $funColor2;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.project-story {
+  padding: 2.4rem;
+
+  h2 {
+    color: $funColor2;
+  }
+
+  p {
+    color: white;
+    padding-top: 1.6rem;
+  }
+
+  p:first-of-type {
+    padding-top: 2rem;
+  }
+
+  ul {
+    padding-top: 0.8rem;
+  }
+
+  li {
+    color: white;
+    opacity: 90%;
+    padding-top: 0.4rem;
+  }
+}
+
+.scroll-mockup-container {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  z-index: 1;
+  bottom: 10px;
+  color: #333;
+  cursor: pointer;
+  @include flex(row, center, center);
+
+  svg {
+    width: 60%;
+    height: 60%;
+    fill: white;
+    margin-top: 0.5rem;
+    animation: arrowDown 2s ease infinite;
+  }
+}
+
+//Primary Button
+.project-story-button {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: solid 2px rgba(46, 178, 255, 0.651);
+  background: white;
+  color: $funColor2;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5);
+  transition-property: transform;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background: $funColor2;
+    color: white;
+    transform: scale(1.1);
+  }
+}
+
+//Popup Site Mapping
+.popup-site-mapping-container {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include flex(row, center, center);
+  background-color: rgba($color: #ffffff, $alpha: 0.9);
+  border-radius: 10px;
+  display: none;
+}
+
+.popup-site-mapping {
+  @include flex(column, center, center);
+  height: 100%;
+
+  button {
+    background: none;
+    padding-right: 1.6rem;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    font-weight: 500;
+    color: $gray;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.3);
+      color: rgb(46, 178, 255);
+    }
+  }
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: 90%;
+    padding: 1.6rem 1.6rem 0rem 1.6rem;
+  }
+}
+
+//Section Other Projects
+.project-story-description-container.other-projects {
+  @include flex(column, space-around, center);
+  width: 100%;
+  background: $backgroundColor;
+
+  h1 {
+    font-family: $fontFamilyTitle2;
+    font-size: calc(6.4rem + 1vw);
+    color: white;
+    padding: 1.6rem;
+    text-align: center;
+  }
+}
+
+.other-project-wrapper {
+  width: 80%;
+  @include flex(row, space-around, space-around);
+  padding-bottom: 2.4rem;
+}
+
+.other-project-link-wrapper {
+  width: 20%;
+  @include flex(column, space-between, center);
+
+  p {
+    padding: 2.8rem 0;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  a {
+    width: 50%;
+  }
+}
+
+.other-project-img-container {
+  @include flex(row, center, center);
+  img {
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    &:hover {
+      transform: scale(1.2) rotate(-10deg) translate3d(0, -4rem, 10rem);
+    }
+  }
+}
+
+//SECTION STORY - Hero
+//Left Side
+.img-hero-container.orphee {
+  @include flex(row, center, center);
+  svg {
+    width: 50%;
+  }
+}
+
+//SECTION STORY - Mythology
+//Left Side
+.img-mythology-container {
+  @include flex(row, center, center);
+  flex: 1 1 40%;
+  svg {
+    width: 50%;
+    height: 50%;
+  }
+}
+//Right Side
+.project-story.mythology.orphee {
+  flex: 1 1 60%;
+}
+
+//SECTION STORY - Now I want you to imagine..
+//Left Side
+.project-story.imagine.orphee {
+  @include flex(column, center, flex-start);
+  flex: 1 1 60%;
+}
+//Right Side
+.svg-imagine-container.orphee {
+  @include flex(row, center, center);
+  flex: 1 1 40%;
+  svg {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+//SECTION STORY - What's the problem
+//Left Side
+.svg-problem-container {
+  @include flex(row, center, center);
+  flex: 1 1 40%;
+  svg {
+    width: 80%;
+    height: 80%;
+  }
+}
+//Right Side
+.project-story.problem.orphee {
+  @include flex(column, center, flex-start);
+  flex: 1 1 60%;
+}
+
+//SECTION STORY - And who is our user?
+//Left Side
+.project-story.user {
+  flex: 1 1 50%;
+  padding: 2.4rem;
+}
+//Right Side
+.img-user-container.persona-orphee {
+  flex: 1 1 50%;
+  img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border: 2px solid $funColor2;
+  }
+}
+
+//SECTION STORY - Main functions
+.project-story-description-container.functions.orphee {
+  position: relative;
+}
+//Left side
+.img-functions-container.orphee {
+  flex: 1 1 50%;
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+//Right side
+.project-story.functions.orphee {
+  @include flex(column, center, flex-start);
+  flex: 1 1 50%;
+}
+
+//SECTION STORY - Logo Design
+//Left Side
+.project-story.logo-conception.orphee {
+  flex: 1 1 40%;
+}
+//Right Side
+.img-logo-conception-container.orphee {
+  flex: 1 1 40%;
+  @include flex(row, center, center);
+  img {
+    width: 60%;
+  }
+}
+
+//SECTION STORY - Low Fidelity & High Fidelity Mock Ups
+//Low fidelity and Hight fidelity gallery
+.project-story-description-container.lofi-mockups.orphee,
+.project-story-description-container.hifi-mockups.orphee {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 4rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+//SECTION STORY DESCRIPTION CARD  - Other Projects
+.other-project-link-wrapper.orphee a {
+  width: 90%;
+}

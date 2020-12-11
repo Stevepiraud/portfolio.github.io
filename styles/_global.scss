@@ -1,0 +1,111 @@
+//GENERAL RULES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  outline: none;
+}
+
+body {
+  font-family: $fontFamily1;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  position: absolute;
+  //overflow: hidden;
+}
+
+h1 {
+  font-size: calc(#{$header1} + (56 - 40) * ((100vw - 768px) / (1600 - 768)));
+}
+
+h2 {
+  font-size: calc(#{$header2} + (40 - 32) * ((100vw - 768px) / (1600 - 768)));
+}
+
+h3 {
+  font-size: calc(#{$header3} + (28 - 24) * ((100vw - 768px) / (1600 - 768)));
+}
+
+h4 {
+  font-size: calc(#{$header4} + (24 - 20) * ((100vw - 768px) / (1600 - 768)));
+}
+
+button,
+li,
+label,
+input,
+a,
+p {
+  font-size: calc(#{$text} + (22 - 16) * ((100vw - 768px) / (1600 - 768)));
+}
+
+button {
+  outline: none;
+}
+
+p {
+  line-height: 150%;
+  opacity: 90%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.is-transitioning {
+  pointer-events: none;
+  cursor: progress;
+}
+
+.on-hover-link {
+  &:hover {
+    color: $funColor2;
+    font-size: calc(2.4rem + 1vw);
+  }
+}
+
+.active-link {
+  color: $funColor2;
+}
+
+/*
+//Here we are going to hide the desktop style
+.hide-desktop-style {
+  //max-width 768px
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+//Here we are going to hide the mobile style
+.hide-mobile-style {
+  //min-width 1023px
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
+
+//MEDIA QUERIES
+//Tablet
+@include breakpoint-down(medium) {
+}
+
+@include breakpoint-down(small) {
+}
+
+//Mobile
+@include breakpoint-down(xsmall) {
+}
+*/

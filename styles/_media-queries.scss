@@ -1,0 +1,1101 @@
+//DESKTOP SCREENS
+@media screen and(min-width: 768.01px) {
+  .main-head-mobile,
+  .nav-bar-mobile {
+    display: none;
+  }
+
+  //Site Mapping
+  .project-story-description-container.functions.thesliderz.mobile,
+  .project-story-description-container.functions.orphee.mobile,
+  .project-story-description-container.functions.wonderfood.mobile {
+    display: none;
+  }
+
+  //Orphée
+  .project-story-description-container.mythology.orphee.mobile,
+  .project-story-description-container.imagine.orphee.mobile,
+  .project-story-description-container.problem.orphee.mobile,
+  .project-story-description-container.user.orphee.mobile,
+  .project-story-description-container.functions.orphee.mobile,
+  .project-story-description-container.logo-conception.orphee.mobile {
+    display: none;
+  }
+
+  //Wonderfood
+  .project-story-description-container.user.wonderfood.mobile,
+  .project-story-description-container.needs.wonderfood.mobile,
+  .project-story-description-container.functions.wonderfood.mobile,
+  .project-story-description-container.moodboard.wonderfood.mobile {
+    display: none;
+  }
+
+  //Ariane
+  .project-story-description-container.intro.ariane.mobile,
+  .project-story-description-container.solution.ariane.mobile,
+  .project-story-description-container.stakeholders-interest.ariane.mobile,
+  .project-story-description-container.uxdesign.ariane.mobile,
+  .project-story-description-container.social.ariane.mobile,
+  .project-story-description-container.gamification.ariane.mobile {
+    display: none;
+  }
+}
+
+//TABLET SCREENS
+@media screen and(max-width: 768px) {
+  //Content to display none
+  //Nav bar
+  .main-head {
+    display: none;
+  }
+
+  //Orphée
+  .project-story-description-container.mythology.orphee.mobile,
+  .project-story-description-container.imagine.orphee.mobile,
+  .project-story-description-container.problem.orphee.mobile,
+  .project-story-description-container.user.orphee.mobile,
+  .project-story-description-container.functions.orphee.mobile,
+  .project-story-description-container.logo-conception.orphee.mobile {
+    display: none;
+  }
+
+  //Wonderfood
+  .project-story-description-container.user.wonderfood.mobile,
+  .project-story-description-container.needs.wonderfood.mobile,
+  .project-story-description-container.functions.wonderfood.mobile,
+  .project-story-description-container.moodboard.wonderfood.mobile {
+    display: none;
+  }
+
+  //Ariane
+  .project-story-description-container.intro.ariane.mobile,
+  .project-story-description-container.solution.ariane.mobile,
+  .project-story-description-container.stakeholders-interest.ariane.mobile,
+  .project-story-description-container.uxdesign.ariane.mobile,
+  .project-story-description-container.social.ariane.mobile,
+  .project-story-description-container.gamification.ariane.mobile {
+    display: none;
+  }
+
+  //Site Mapping
+  .project-story-button.thesliderz-site-mapping.desktop,
+  .project-story-button.orphee-site-mapping.desktop,
+  .project-story-button.wonderfood-site-mapping.desktop {
+    display: none;
+  }
+
+  //GENERAL RULES
+  //For the scrolling to stop
+  body.hide-overflowing-content {
+    overflow: hidden;
+  }
+
+  button,
+  li,
+  label,
+  input,
+  a,
+  p {
+    font-size: $text;
+  }
+  //Pop-up site mapping
+  .popup-site-mapping-container {
+    width: 80%;
+  }
+  .popup-site-mapping {
+    button {
+      font-size: calc(2rem + 1vw);
+    }
+  }
+
+  //Hero section
+  .img-hero-container.thesliderz {
+    svg {
+      width: 30%;
+    }
+  }
+
+  //Card Transitions
+  .project-story-card-transitions-container {
+    height: 40rem;
+  }
+  .project-story-card-transitions {
+    height: 40rem;
+    svg {
+      width: 30%;
+    }
+  }
+
+  //MENU FOR MOBILE + NAV
+  //Header Fixing Space
+  .header-fix-space {
+    min-height: 10vh;
+  }
+
+  //Header
+  .main-head-mobile {
+    @include flex(row, center, center);
+    width: 100%;
+    margin: auto;
+    min-height: 10vh;
+    position: fixed;
+    background: $backgroundColor;
+    z-index: 4;
+
+    //logo
+    h1 {
+      @include flex(row, center, center);
+      a {
+        font-family: $fontFamilyTitle2;
+        font-style: italic;
+        font-weight: 300;
+        opacity: 1;
+      }
+    }
+  }
+  .main-head-mobile.bottom-shadow {
+    box-shadow: 0px 2px 10px rgba(137, 251, 255, 0.1),
+      0px 2px 20px rgba(140, 68, 255, 0.1);
+  }
+
+  //Hamburger Menu
+  .line1,
+  .line2 {
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: white;
+    pointer-events: none;
+  }
+
+  //Hamburger Menu
+  .burger {
+    cursor: pointer;
+  }
+
+  //Navigation links
+  .top-nav-mobile {
+    @include flex(row, space-between, center);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .nav-links-mobile {
+    margin-top: 8rem;
+  }
+  .link-container-mobile {
+    text-align: center;
+    padding: 2.4rem 0rem;
+
+    a {
+      color: white;
+      font-size: calc(2.4rem + 1vw);
+    }
+  }
+
+  //Social Networks
+  .social-networks-container-mobile {
+    @include flex(row, center, center);
+  }
+  .icon {
+    svg {
+      width: calc(4rem + 1vw);
+    }
+  }
+  .icon.instagram {
+    margin-right: 0;
+  }
+
+  //Languages
+  .language-container {
+    a {
+      //color: white;
+      font-size: calc(1.6rem + 1vw);
+    }
+  }
+  .language.fr {
+    border-left: solid 1px $gray;
+  }
+  a.inactive-language {
+    color: $gray;
+  }
+
+  //Navbar outside the main
+  .nav-bar-mobile {
+    @include flex(column, space-around, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $backgroundColor;
+    z-index: 3;
+    opacity: 1;
+    clip-path: circle(50px at 100% -10%);
+  }
+
+  //LANDING PAGE
+  .hero {
+    @include flex(column, space-evenly, center);
+    height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .introduction-text-wrapper {
+    p {
+      color: $funColor2;
+      font-weight: 300;
+    }
+  }
+
+  .hero-nav {
+    ul {
+      @include flex(column, space-around, space-around);
+      height: 32rem;
+    }
+
+    li {
+      button {
+        width: 16rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  .bgContainer-text {
+    display: none;
+  }
+
+  //POP-UP PAGE
+  .workInProgress-popup {
+    width: calc(36rem + 1vw);
+  }
+  .workInProgress-close-btn {
+    font-size: calc(2.4rem + 1vw);
+  }
+
+  //CURSOR
+  .cursor-ghost,
+  .cursor-rocket {
+    display: none;
+  }
+
+  //ANIMATION
+  //Yoda animation when hovering my name
+  .introduction-img-yoda-active {
+    transform: translate(-160px, 0px) scale(1);
+    opacity: 1;
+  }
+  //Baby yoda spaceship with swipers
+  .babyYodaSpaceship {
+    img {
+      width: 20%;
+    }
+  }
+
+  //STORY PAGE
+  form {
+    width: 70%;
+  }
+
+  //PROJECT - THESLIDERZ
+  //Mockups
+  //Hight fi and Low fi Mockups
+  .project-story-description-container.lofi-mockups.thesliderz,
+  .project-story-description-container.hifi-mockups.thesliderz {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  //Client's review
+  .project-story-description-container.review.thesliderz {
+    img {
+      width: 80%;
+    }
+  }
+
+  //PROJECT - ORPHEE
+  //Hero
+  .img-hero-container.orphee {
+    svg {
+      width: 30%;
+    }
+  }
+
+  //Hight fi and Low fi Mockups
+  .project-story-description-container.lofi-mockups.orphee,
+  .project-story-description-container.hifi-mockups.orphee {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  //PROJECT - WONDERFOOD
+  //Hero
+  .img-hero-container.wonderfood {
+    svg {
+      width: 30%;
+    }
+  }
+
+  //Hight fi and Low fi Mockups
+  .project-story-description-container.lofi-mockups.wonderfood,
+  .project-story-description-container.hifi-mockups.wonderfood {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //PROJECT - ARIANE
+  //Hero
+  .img-hero-container.left.ariane {
+    img {
+      width: 30%;
+    }
+  }
+}
+
+//MOBILE SCREENS
+@media screen and(max-width: 414px) {
+  //Content to display none
+  //Orphée
+  .project-story-description-container.mythology.orphee.desktop,
+  .project-story-description-container.imagine.orphee.desktop,
+  .project-story-description-container.problem.orphee.desktop,
+  .project-story-description-container.user.orphee.desktop,
+  .project-story-description-container.functions.orphee.desktop,
+  .project-story-description-container.logo-conception.orphee.desktop {
+    display: none;
+  }
+
+  //Wonderfood
+  .project-story-description-container.user.wonderfood.desktop,
+  .project-story-description-container.needs.wonderfood.desktop,
+  .project-story-description-container.functions.wonderfood.desktop,
+  .project-story-description-container.moodboard.wonderfood.desktop {
+    display: none;
+  }
+
+  //Ariane
+  .project-story-description-container.intro.ariane.desktop,
+  .project-story-description-container.solution.ariane.desktop,
+  .project-story-description-container.stakeholders-interest.ariane.desktop,
+  .project-story-description-container.uxdesign.ariane.desktop,
+  .project-story-description-container.social.ariane.desktop,
+  .project-story-description-container.gamification.ariane.desktop {
+    display: none;
+  }
+
+  #btn-scroll-to-top {
+    right: 3.2rem;
+  }
+  .about-me-container {
+    min-height: auto;
+
+    h1 {
+      width: 90%;
+    }
+  }
+
+  //LANDING PAGE
+  #hero,
+  #hero-fr {
+    @include flex(column, flex-start, center);
+  }
+
+  .introduction-container {
+    margin-top: 4rem;
+  }
+
+  .hero-nav {
+    margin-top: 4rem;
+  }
+
+  //STORY PAGE
+  //Profile picture + presentation
+  .about-me-profile-content {
+    @include flex(column, center, center);
+    width: 90%;
+    position: relative;
+    margin-top: 12rem;
+  }
+
+  .about-me-profile-picture {
+    width: 30%;
+    position: absolute;
+    top: -70px;
+    left: -20px;
+    z-index: 2;
+    img {
+      width: 100%;
+    }
+  }
+  .about-me-profile-text::after {
+    display: none;
+  }
+
+  //My family
+  .about-me-container.profile-story.part-one {
+    margin-top: 8rem;
+  }
+  .profile-story-part.one {
+    @include flex(column, center, center);
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .part-text.one::after {
+    display: none;
+  }
+
+  //Reason to become a designer
+  .about-me-container.profile-story.part-two {
+    margin-top: 8rem;
+  }
+  .profile-story-part.two {
+    @include flex(column, center, center);
+    margin-top: 4rem;
+
+    svg {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+  .part-text.two {
+    width: 100%;
+    margin-top: 1.6rem;
+  }
+
+  //Purpose as a designer
+  .about-me-container.profile-story.part-purpose {
+    margin-top: 8rem;
+  }
+  .profile-story-part.purpose {
+    @include flex(column, center, center);
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+
+    svg {
+      width: 50%;
+      transform: rotate(40deg);
+    }
+  }
+  .part-text.purpose {
+    margin: 0;
+    margin-top: 1.6rem;
+  }
+  .part-text.purpose::after {
+    display: none;
+  }
+
+  //Background
+  .about-me-container.profile-story.part-background {
+    margin-top: 8rem;
+  }
+  .profile-story-part.background {
+    @include flex(column, center, center);
+    margin-top: 4rem;
+  }
+  .iae-degree,
+  .kedge-degree {
+    flex: 1 1 30rem;
+  }
+  .part-text.background {
+    height: 28rem;
+  }
+
+  .kedge-degree {
+    p:last-child {
+      font-size: calc(0.8rem + 1vw);
+    }
+  }
+
+  //My Experience
+  .about-me-container.profile-story.part-experience {
+    margin-top: 8rem;
+  }
+  .part-text.experience {
+    margin: 0;
+    width: 100%;
+  }
+  .profile-story-part {
+    @include flex(column, center, center);
+  }
+  .profile-story-part.experience {
+    img {
+      width: 40%;
+    }
+  }
+  .profile-story-part.experience.isi {
+    margin-top: 4rem;
+  }
+  .profile-story-part.experience.m6 {
+    margin-top: 1.6rem;
+  }
+
+  //Tools for designing
+  .about-me-container.part-design-tools {
+    @include flex(column, flex-start, center);
+    min-height: auto;
+    margin-top: 8rem;
+  }
+  .all-tools-container {
+    @include flex(column, space-evenly, center);
+    margin-top: 4rem;
+
+    svg {
+      width: 30%;
+    }
+  }
+  .tools-flexbox {
+    @include flex(row, center, center);
+  }
+  .all-tools-container.design .tools-flexbox {
+    margin-top: 1.6rem;
+  }
+
+  //Tools for programming
+  .about-me-container.part-programming-tools {
+    @include flex(column, flex-start, center);
+    min-height: auto;
+    margin-top: 8rem;
+  }
+  .all-tools-container.programming {
+    margin-top: 4rem;
+  }
+  .all-tools-container.programming .tools-flexbox {
+    margin-top: 1.6rem;
+  }
+
+  //Tools for marketing
+  .about-me-container.part-marketing-tools {
+    @include flex(column, flex-start, center);
+    min-height: auto;
+    margin-top: 8rem;
+  }
+  .all-tools-container.marketing {
+    margin-top: 4rem;
+  }
+  .all-tools-container.marketing .tools-flexbox {
+    margin-top: 1.6rem;
+  }
+
+  //Form
+  .header-section {
+    svg {
+      width: 20%;
+    }
+  }
+  .form-section {
+    margin-top: 8rem;
+    min-height: 40rem;
+  }
+  form {
+    width: 90%;
+  }
+  .name-section,
+  .email-section {
+    width: 80%;
+    height: 90px;
+  }
+  .message-section {
+    width: 80%;
+  }
+  .submit-section {
+    width: 80%;
+  }
+
+  //End
+  .about-me-container.end-section {
+    min-height: auto;
+    margin-top: 8rem;
+
+    p:nth-child(3) {
+      text-align: center;
+      margin-top: 1.6rem;
+    }
+  }
+  .end-section {
+    width: 90%;
+  }
+  .end-section-content {
+    @include flex(column, center, center);
+    margin-top: 4rem;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  //Bonus Content
+  .about-me-container.bonus {
+    @include flex(column, space-evenly, center);
+    margin-top: 8rem;
+  }
+  .bonus-content {
+    @include flex(column, space-evenly, center);
+    min-height: 50rem;
+    width: 100%;
+
+    p {
+      padding: 0rem 0rem 2.4rem 0rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+  footer p {
+    font-size: calc(0.8rem + 1vw);
+  }
+
+  //PORTFOLIO
+  .project-overview-main-container {
+    min-height: auto;
+  }
+  .project-overview-container {
+    width: 100%;
+  }
+  .project-img-container {
+    flex: 1 1 20rem;
+  }
+  .project-description-text {
+    padding-right: 1.6rem;
+  }
+  .project-overview-container.thesliderz {
+    margin-top: 4rem;
+  }
+  .project-overview-container.orphee {
+    margin-top: 8rem;
+  }
+  .project-overview-container.wonderfood {
+    margin-top: 8rem;
+  }
+  .project-overview-container.ariane {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .project-img-container.thesliderz {
+    img {
+      width: 80%;
+    }
+  }
+  .project-img-container.orphee {
+    img {
+      width: 90%;
+    }
+  }
+  .project-img-container.ariane {
+    img {
+      width: 80%;
+    }
+  }
+  .scroll-img-container {
+    display: none;
+  }
+
+  //PRJECTS - GENERAL RULES
+  //Transition cards
+  .project-story-card-transitions-container {
+    min-height: auto;
+    height: auto;
+    margin-top: 8rem;
+  }
+  .project-story-card-transitions {
+    height: auto;
+    width: 90%;
+
+    svg {
+      margin-bottom: 2rem;
+      width: 40%;
+    }
+  }
+
+  //Main Containers
+  //Introduction
+  .project-story-introduction-container.hero {
+    height: auto;
+  }
+  .project-story-introduction-container {
+    min-height: auto;
+  }
+  //Description
+  .project-story-description-container {
+    min-height: auto;
+    margin-top: 4rem;
+
+    h2 {
+      text-align: center;
+    }
+  }
+  //Pop-up Site Mapping
+  .popup-site-mapping-container {
+    height: 50%;
+  }
+
+  //Hero Page
+  .img-hero-container {
+    flex: 1 1 30rem;
+  }
+  .text-hero-container {
+    flex: 1 1 20rem;
+  }
+  //Project Story
+  .project-story {
+    padding-top: 0;
+  }
+
+  //Other Projects
+  .project-story-description-container.other-projects {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  //Site Mapping Pop-up
+  .project-story-description-container.functions.thesliderz.desktop,
+  .project-story-description-container.functions.orphee.desktop,
+  .project-story-description-container.functions.wonderfood.desktop {
+    display: none;
+  }
+
+  //PROJECT - THE SLIDERZ
+  .project-story-description-container.functions.thesliderz.mobile {
+    @include flex(column, center, center);
+  }
+  .img-hero-container.thesliderz svg {
+    width: 50%;
+  }
+  .project-story-description-container.intro.thesliderz {
+    margin-top: 4rem;
+  }
+  .project-story.intro-text.thesliderz {
+    max-width: 100%;
+    padding: 2rem 2.4rem 0rem 2.4rem;
+  }
+
+  .project-story-description-container.solving.thesliderz {
+    margin-top: 4rem;
+  }
+  .project-story.solving.thesliderz {
+    padding: 0 2.4rem;
+  }
+  .project-story.reasons-container.thesliderz {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 2rem 2.4rem 0 2.4rem;
+  }
+  .project-story.reasons-container.thesliderz {
+    width: 100%;
+    svg {
+      width: 30%;
+    }
+  }
+  .project-story.reasons-container.thesliderz .reasons-list.contacts svg {
+    width: 25%;
+  }
+
+  //Design Process
+  .project-story-description-container.design-process.thesliderz {
+    margin-top: 4rem;
+  }
+  .project-story.design-process-header.thesliderz {
+    padding: 0 2.4rem;
+  }
+  .project-story.design-process-content.thesliderz {
+    padding: 2rem 2.4rem 0 2.4rem;
+  }
+  .design-process-item {
+    svg {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+  .project-story.client-requirement-header.thesliderz {
+    padding: 0rem 2.4rem;
+  }
+  .project-story.client-requirement-content.thesliderz {
+    padding: 2rem 2.4rem 0rem 2.4rem;
+  }
+
+  //Application Architecture
+  .project-story-description-container.functions.thesliderz {
+    margin-top: 4rem;
+  }
+  .project-story.functions.thesliderz {
+    padding: 2rem 2.4rem 0 2.4rem;
+  }
+  .img-functions-container.thesliderz {
+    @include flex(row, center, center);
+  }
+  .project-story-button.thesliderz-site-mapping.mobile {
+    align-self: center;
+  }
+
+  //Low fi & Hi fi Gallery
+  .project-story-description-container.lofi-mockups.thesliderz,
+  .project-story-description-container.hifi-mockups.thesliderz {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //Interactive Prototype
+  .project-story-description-container.prototype.thesliderz {
+    margin-top: 4rem;
+
+    iframe {
+      margin-top: 2rem;
+      min-height: auto;
+      height: 72rem;
+      align-self: flex-start;
+    }
+  }
+
+  //Client's Review
+  .project-story-description-container.review.thesliderz {
+    margin-top: 4rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  //PROJECT - ORPHEE
+  //Hero
+  .img-hero-container.orphee svg {
+    width: 50%;
+  }
+
+  .project-story-description-container.orphee.mobile {
+    @include flex(column, center, center);
+    min-height: auto;
+
+    svg {
+      margin: 2rem 0;
+    }
+
+    h2 {
+      width: 90%;
+    }
+  }
+  .project-story.mythology.orphee {
+    padding: 0 2.4rem;
+  }
+
+  //Imagine
+  .project-story.imagine.orphee {
+    padding: 0 2.4rem;
+  }
+
+  //Problem
+  .project-story.problem.orphee {
+    padding: 0 2.4rem;
+  }
+
+  //Who is our user
+  .img-user-container.persona-orphee {
+    @include flex(row, center, center);
+    margin: 2rem 0;
+  }
+  .project-story.user.orphee {
+    padding: 0 2.4rem;
+  }
+
+  //Main Functions
+  .img-functions-container.orphee {
+    @include flex(row, center, center);
+    margin: 2rem 0;
+  }
+  .project-story.functions.orphee {
+    padding: 0 2.4rem;
+  }
+  .project-story-button.orphee-site-mapping {
+    align-self: center;
+  }
+
+  //Logo Design Process
+  .img-logo-conception-container.orphee {
+    @include flex(row, center, center);
+    margin: 2rem 0;
+  }
+  .project-story.logo-conception.orphee {
+    padding: 0 2.4rem;
+  }
+
+  //Lofi & Hifi mock-ups
+  .project-story-description-container.lofi-mockups.orphee,
+  .project-story-description-container.hifi-mockups.orphee {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //PROJECT - WONDERFOOOOOOOOOOD!
+  //Hero
+  .img-hero-container.wonderfood svg {
+    width: 50%;
+  }
+
+  //Who is our user
+  .project-story-description-container.user.wonderfood.mobile {
+    @include flex(column, center, center);
+  }
+  .img-user-container.persona-wonderfood {
+    @include flex(row, center, center);
+    margin-top: 2rem;
+  }
+
+  .project-story {
+    p:first-of-type {
+      padding-top: 0;
+    }
+  }
+
+  .project-story.user {
+    padding-bottom: 0;
+  }
+
+  //Needs
+  .project-story-needs-wrapper.wonderfood {
+    @include flex(column, space-evenly, center);
+  }
+  .project-story-needs-wrapper.wonderfood:nth-child(2) {
+    margin-top: 4rem;
+  }
+  .img-needs-container.wonderfood {
+    @include flex(row, center, center);
+    svg {
+      height: auto;
+      width: 70%;
+      margin: 0;
+      margin-top: 2rem;
+    }
+  }
+  .project-story.needs {
+    padding-bottom: 0;
+  }
+
+  //Main Functions
+  .project-story-description-container.functions.wonderfood.mobile {
+    @include flex(column, center, center);
+  }
+  .img-functions-container.wonderfood svg {
+    width: 30%;
+    padding-top: 0;
+    margin-top: 2rem;
+  }
+  .project-story-button.wonderfood-site-mapping.mobile {
+    align-self: center;
+  }
+
+  //Moodboard
+  .project-story-description-container.moodboard.wonderfood.mobile {
+    @include flex(column, center, center);
+  }
+  .project-story.moodboard.wonderfood {
+    margin-top: 2rem;
+  }
+
+  //Logo Design Process
+  .project-story-description-container.logo-conception.wonderfood {
+    margin-top: 4rem;
+  }
+  .logo-conception-text {
+    width: 90%;
+
+    p:nth-child(1) {
+      margin-top: 2rem;
+    }
+  }
+  .img-logo-conception-container.wonderfood {
+    width: 60%;
+    margin-top: 2rem;
+  }
+
+  //Lofi & Hifi mock-ups
+  .project-story-description-container.lofi-mockups.wonderfood,
+  .project-story-description-container.hifi-mockups.wonderfood {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  //PROJECT - ARIANE
+  //Hero
+  .img-hero-container.left.ariane img {
+    width: 50%;
+  }
+
+  //Intro
+  .project-story-description-container.intro.ariane.mobile {
+    @include flex(column, center, center);
+    margin-top: 8rem;
+  }
+  .img-intro-container.ariane {
+    margin-top: 2rem;
+  }
+  .project-story.intro.ariane {
+    padding-bottom: 0;
+    padding-top: 1.6rem;
+  }
+
+  //How to improve it
+  .project-story-description-container.solution.ariane.mobile {
+    @include flex(column, center, center);
+  }
+  .img-solution-container.ariane {
+    margin: 2rem 0rem;
+  }
+
+  //Stakeholders' interests
+  .project-story-description-container.stakeholders-interest.ariane.mobile {
+    @include flex(column, center, center);
+  }
+  .project-story.interest {
+    min-height: auto;
+    padding: 0 2.4rem;
+  }
+  .interest-list-container {
+    @include flex(column, center, center);
+
+    svg {
+      width: 25%;
+    }
+  }
+  .interest-list-items {
+    width: 100%;
+  }
+  .project-story-description-container.ariane.mobile {
+    svg {
+      margin-top: 2rem;
+    }
+  }
+
+  //Inspired by 2 use cases
+  .project-story-description-container.uxdesign.ariane.mobile {
+    @include flex(column, center, center);
+  }
+  .project-story.uxdesign.ariane {
+    min-height: auto;
+  }
+  .project-story.uxdesign.ariane {
+    padding: 0 2.4rem;
+    margin: 2rem 0;
+  }
+
+  //Social Network Function
+  .project-story-description-container.social.ariane.mobile {
+    @include flex(column, center, center);
+  }
+  .project-story.social.ariane {
+    min-height: auto;
+  }
+  .img-social-container.ariane {
+    margin: 2rem 0;
+  }
+  .project-story.social.ariane {
+    padding: 0 2.4rem;
+  }
+
+  //Gamification of the app
+  .project-story-description-container.gamification.ariane.mobile {
+    @include flex(column, center, center);
+  }
+  .project-story.gamification.ariane {
+    min-height: auto;
+  }
+  .img-gamification-container.ariane {
+    margin: 2rem 0;
+  }
+  .project-story.gamification.ariane {
+    padding: 0 2.4rem;
+  }
+}
+
+@media screen and(max-width: 375px) {
+}

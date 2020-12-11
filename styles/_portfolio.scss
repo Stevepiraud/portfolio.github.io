@@ -1,0 +1,165 @@
+body {
+  background: $backgroundColor;
+}
+
+//CARD
+//Container
+.project-overview-main-container {
+  min-height: 90vh;
+  @include flex(column, center, center);
+  position: relative;
+}
+
+.project-overview-container {
+  @include flex(row, center, center);
+  width: 80%;
+}
+
+//Img (left side)
+.project-img-container {
+  @include flex(row, center, center);
+  flex: 1 1 40rem;
+  width: 20rem;
+  height: 100%;
+  img {
+    width: 30%;
+  }
+}
+
+.project-img-container .orphee {
+  width: 50%;
+}
+
+.project-img-container .wonderfood {
+  width: 90%;
+}
+
+//Description (right side)
+.project-description-wrapper {
+  @include flex(column, center, flex-start);
+  flex: 1 1 40rem;
+  width: 100%;
+  height: 100%;
+  h1 {
+    color: white;
+    font-family: $fontFamilyTitle2;
+  }
+  p {
+    color: white;
+    padding-top: 1.6rem;
+  }
+}
+
+.tool-container {
+  padding-top: 2.4rem;
+}
+
+.tools {
+  @include flex(row, flex-start, center);
+  a {
+    margin: 1rem;
+    //border: 1px solid white;
+    background: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    @include flex(row, center, center);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  img {
+    @include flex(row, center, center);
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.tools a:nth-child(1) {
+  margin-left: 0;
+}
+
+.viewProject-button {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: solid 2px rgba(46, 178, 255, 0.651);
+  background: white;
+  color: $funColor2;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5);
+  transition-property: transform;
+  text-align: center;
+  &:hover {
+    background: $funColor2;
+    color: white;
+    transform: scale(1.1);
+  }
+}
+
+//SCROLL BUTTON PER SECTION
+.scroll-img-container {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  color: #333;
+  cursor: pointer;
+  @include flex(row, center, center);
+  svg {
+    width: 60%;
+    height: 60%;
+    fill: $funColor2;
+    margin-top: 0.5rem;
+    animation: arrowDown 2s ease infinite;
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 10px) scale(1);
+    opacity: 0;
+  }
+}
+
+//SCROLL TO TOP BUTTON
+#btn-scroll-to-top {
+  position: fixed;
+  right: 8rem;
+  bottom: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: $funColor2;
+  color: white;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.fas {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+//Hide the arrow to top button for the homepage
+.fas.fa-arrow-circle-up.homepage {
+  display: none;
+}
