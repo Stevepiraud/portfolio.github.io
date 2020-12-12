@@ -5,7 +5,12 @@
     display: none;
   }
 
-  //Site Mapping
+  //Link to the review only working on desktop view
+  .link-to-customer-review-mobile {
+    display: none;
+  }
+
+  //TheSliderz
   .project-story-description-container.functions.thesliderz.mobile {
     display: none;
   }
@@ -44,6 +49,11 @@
   //Content to display none
   //Nav bar
   .main-head {
+    display: none;
+  }
+
+  //Link to the review only working on desktop view
+  .link-to-customer-review-desktop {
     display: none;
   }
 
@@ -417,6 +427,18 @@
     }
   }
 
+  //Portfolio
+  .view-project-buttons-container {
+    @include flex(column, center, center);
+
+    a:nth-child(2) {
+      margin-left: 0rem;
+    }
+  }
+  .viewProject-button.fr {
+    min-width: 22rem;
+  }
+
   //LANDING PAGE
   #hero,
   #hero-fr {
@@ -429,6 +451,10 @@
 
   .hero-nav {
     margin-top: 4rem;
+  }
+
+  .workInProgress-popup {
+    margin-top: 5.2rem;
   }
 
   //STORY PAGE

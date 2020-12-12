@@ -579,6 +579,7 @@ a {
   color: #2eb2ff;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  text-align: center;
 }
 
 .contact-me-popup-btn:hover {
@@ -595,6 +596,7 @@ a {
   border-radius: 10px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  text-align: center;
 }
 
 .linkToProjectSection-btn:hover {
@@ -983,9 +985,29 @@ body {
   margin-left: 0;
 }
 
+.view-project-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view-project-buttons-container a:nth-child(2) {
+  margin-left: 2rem;
+}
+
 .viewProject-button {
   margin-top: 2rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2.4rem;
   border: solid 2px rgba(46, 178, 255, 0.651);
   background: white;
   color: #2eb2ff;
@@ -2443,7 +2465,6 @@ body {
 
 .project-story-description-container.prototype.thesliderz iframe {
   border: none;
-  min-width: 80%;
   min-height: 70vh;
 }
 
@@ -3192,6 +3213,9 @@ footer p {
   .nav-bar-mobile {
     display: none;
   }
+  .link-to-customer-review-mobile {
+    display: none;
+  }
   .project-story-description-container.functions.thesliderz.mobile {
     display: none;
   }
@@ -3221,6 +3245,9 @@ footer p {
 
 @media screen and (max-width: 768px) {
   .main-head {
+    display: none;
+  }
+  .link-to-customer-review-desktop {
     display: none;
   }
   .project-story-description-container.functions.thesliderz.mobile {
@@ -3563,6 +3590,27 @@ footer p {
   .about-me-container h1 {
     width: 90%;
   }
+  .view-project-buttons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .view-project-buttons-container a:nth-child(2) {
+    margin-left: 0rem;
+  }
+  .viewProject-button.fr {
+    min-width: 22rem;
+  }
   #hero,
   #hero-fr {
     display: -webkit-box;
@@ -3584,6 +3632,9 @@ footer p {
   }
   .hero-nav {
     margin-top: 4rem;
+  }
+  .workInProgress-popup {
+    margin-top: 5.2rem;
   }
   .about-me-profile-content {
     display: -webkit-box;

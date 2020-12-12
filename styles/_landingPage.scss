@@ -271,6 +271,7 @@
 .contact-me-popup-btn {
   color: $funColor2;
   transition: all 0.2s ease-out;
+  text-align: center;
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -284,6 +285,7 @@
   color: $funColor2;
   border-radius: 10px;
   transition: all 0.2s ease-out;
+  text-align: center;
   &:hover {
     background: $funColor2;
     color: white;

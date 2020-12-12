@@ -1177,7 +1177,6 @@ barba.init({
         $(linkFrMobile).removeClass("active-language");
       },
       afterEnter() {
-        //Link To client's review
         $("#link-customer-review-en").click(() => {
           window.location.href =
             "/en/portfolio/thesliderz.html#client-review-en";
@@ -1232,7 +1231,7 @@ barba.init({
       afterEnter() {
         //Link To client's review
         $("#link-customer-review-fr").click(() => {
-          document.location.href =
+          window.location.href =
             "/fr/portfolio/thesliderz.html#client-review-fr";
         });
       },

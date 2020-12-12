@@ -80,9 +80,17 @@ body {
   margin-left: 0;
 }
 
+.view-project-buttons-container {
+  @include flex(row, center, center);
+
+  a:nth-child(2) {
+    margin-left: 2rem;
+  }
+}
+
 .viewProject-button {
   margin-top: 2rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2.4rem;
   border: solid 2px rgba(46, 178, 255, 0.651);
   background: white;
   color: $funColor2;
