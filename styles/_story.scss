@@ -32,6 +32,12 @@
   }
 }
 
+.customer-review-link,
+.link-to-skills {
+  cursor: pointer;
+  color: $funColor2;
+}
+
 //SECTION - hero
 .about-me-container.hero {
   h1 {
@@ -59,6 +65,16 @@
     font-family: $fontFamilyTitle2;
   }
 }
+.about-me-profile-picture {
+  @include flex(column, center, center);
+}
+
+.link-to-mycv {
+  margin-top: 0.8rem;
+  color: $funColor2;
+  @include flex(row, center, center);
+}
+
 //Left Side
 .about-me-profile-picture {
   img {

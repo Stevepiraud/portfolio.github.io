@@ -2473,11 +2473,6 @@ body {
   border-radius: 10px;
 }
 
-.customer-review-link {
-  cursor: pointer;
-  color: #2eb2ff;
-}
-
 .about-me-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2523,6 +2518,12 @@ body {
   padding-top: 1.2rem;
 }
 
+.customer-review-link,
+.link-to-skills {
+  cursor: pointer;
+  color: #2eb2ff;
+}
+
 .about-me-container.hero h1 {
   width: 70%;
 }
@@ -2549,6 +2550,40 @@ body {
   color: white;
   text-align: center;
   font-family: "Lobster Two", cursive;
+}
+
+.about-me-profile-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-to-mycv {
+  margin-top: 0.8rem;
+  color: #2eb2ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-me-profile-picture img {
