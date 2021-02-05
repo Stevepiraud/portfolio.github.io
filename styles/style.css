@@ -3007,11 +3007,20 @@ form label {
 
 .header-section h2 {
   color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  text-align: center;
 }
 
-.header-section svg {
-  padding-left: 2.4rem;
-  width: 12%;
+.header-section .header-section__rocket {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
+.header-section .header-section__rocket svg {
+  width: 50%;
 }
 
 .name-section,
@@ -3957,6 +3966,9 @@ footer p {
   }
   form {
     width: 90%;
+  }
+  .name-section {
+    margin-top: 0rem;
   }
   .name-section,
   .email-section {

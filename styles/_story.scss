@@ -349,10 +349,14 @@ form {
   //justify-self: flex-start;
   h2 {
     color: white;
+    flex: 1 1 70%;
+    text-align: center;
   }
-  svg {
-    padding-left: 2.4rem;
-    width: 12%;
+  .header-section__rocket {
+    flex: 1 1 30%;
+    svg {
+      width: 50%;
+    }
   }
 }
 
